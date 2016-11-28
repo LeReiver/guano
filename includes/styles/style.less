@@ -16,48 +16,113 @@ nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgba(245, 245, 245, 0.31);
-  position: fixed;
   top: 0;
-  #music_nav {
-    position: fixed;
-    top: .5em;
-    right: 2em;
+  position: fixed;
+  right: .25em;
+  z-index: 1000;
+  ul li a #icon_nav   {
+    list-style: none;
+    text-decoration: none;
+    display: inline;
+    float: right;
+    font-size: 8vw;
+    color: #F5F5F5;
+    margin: 8px 0;
+    padding-right: 5px;
+  }
+  ul #logo_nav   {
+    list-style: none;
+    text-decoration: none;
+    float: left;
+    width: 15vw;
+    color: #F5F5F5;
+    margin: 8px 0;
   }
 }
 header {
-  background-image: url("../images/guano_logo_dark.png");
-  margin-top: 1em;
-  padding: 2em 0;
-  height: 90vw;
-  background-size: cover;
-  overflow-y: hidden;
+  background-image: url("../images/hero.jpg");
+  margin: 0;
+  padding: 0 2%;
+  height: 65vw;
+  background-size: contain;
+  overflow: hidden;
   background-repeat: no-repeat;
   background-position: top center;
-  background-attachment: scroll;
+  background-attachment: fixed;
   position: relative;
-
+  z-index: 0;
 }
 main {
   color: #72809F;
   h2 {
-    color: #D5D1D9;
+    color: #72809F;
     font-family: Voltaire, sans-serif;
-    font-size: 2em;
+    font-size: 2.25em;
+    text-align: center;
+    margin: .75em 0;
+  }
+  #newsletter {
+    input {
+      width: 100%;
+      padding: 3%;
+      border-top: #8A001E 2px solid;
+      border-bottom: #8A001E 2px solid;
+      background-color: #D5D1D9;
+      font-size: 5vw;
+      font-family: 'Signika Negative', sans-serif;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.71);
+    }
+    #submit {
+      height: 50%;
+      text-align: center;
+      background-color: #D5D1D9;
+      color: #000;
+    }
+  }
+  #shows {
+    table {
+      width: 100%;
+      th  {
+        padding: 3%;
+        border-top: #8A001E 2px solid;
+        border-bottom: #8A001E 2px solid;
+        background-color: #D5D1D9;
+        font-size: 5vw;
+        text-shadow: #000 0 1px;
+      }
+      td {
+        padding: 4%;
+        color: #D5D1D9;
+        font-size: 4vw;
+       }
+    }
+  }
+  #music {
+    audio {
+      width: 100%;
+    }
+  }
+  #video {
+      video{
+        width: 100%;
+    }
   }
 }
 
 footer {
   #social {
     text-align: center;
-    color: #72809F;
-    padding: 20px 0;
-    margin: 10px 0;
-    font-size: 2em;
+    #footer_nav {
+      color: #D5D1D9;
+      padding: 20px 0 0 0;
+      margin: 10px 8px 0 8px;
+      font-size: 1.75em;
+    }
   }
   #copyright {
     text-align: center;
-    color: #72809F;
-    padding: 20px;
+    color: #D5D1D9;
+    padding: 20px 0;
   }
 }
