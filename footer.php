@@ -7,8 +7,12 @@
  * Description: Footer code for Guano
  */
 ?>
-
-
-<!-- Footer section-->
-
 <footer>
+    <section id="booking"></section>
+    <section id="social">
+        <span class="fa fa-soundcloud" aria-hidden="true"></span>
+        <span class="fa fa-spotify" aria-hidden="true"></span>
+        <span class="fa fa-instagram" aria-hidden="true"></span>
+    </section>
+    <section id="copyright">&copy; 2016 Guano | Designed by LeReiver</section>
+</footer>

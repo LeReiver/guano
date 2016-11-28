@@ -17,3 +17,5 @@
 <link rel="stylesheet" href="includes/styles/style.css">   <!-- Main CSS file -->
 <!-- jQuery CDN -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>   <!-- CDN link for jQuery  -->
+<!-- FontAwesome CDN -->
+<script src="https://use.fontawesome.com/992a4dda6a.js"></script>

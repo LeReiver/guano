@@ -6,3 +6,52 @@
  * Description: Nested CSS styles for LESS compiling
  */
 /* Global Styles */
+body {
+  background-color: #1B1E23;
+  font-family: 'Signika Negative', sans-serif;
+}
+nav {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(245, 245, 245, 0.31);
+  position: fixed;
+  top: 0;
+}
+nav #music_nav {
+  position: fixed;
+  top: .5em;
+  right: 2em;
+}
+header {
+  background-image: url("../images/guano_logo_dark.png");
+  margin-top: 1em;
+  padding: 2em 0;
+  height: 90vw;
+  background-size: cover;
+  overflow-y: hidden;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: scroll;
+  position: relative;
+}
+main {
+  color: #72809F;
+}
+main h2 {
+  color: #D5D1D9;
+  font-family: Voltaire, sans-serif;
+  font-size: 2em;
+}
+footer #social {
+  text-align: center;
+  color: #72809F;
+  padding: 20px 0;
+  margin: 10px 0;
+  font-size: 2em;
+}
+footer #copyright {
+  text-align: center;
+  color: #72809F;
+  padding: 20px;
+}
