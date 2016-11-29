@@ -28,10 +28,11 @@
             <li><a href="#shows"><span id="icon_nav" class="fa fa-ticket" aria-hidden="true"></span></a></li>
         </ul>
     </nav>
-    <header>
-
-    </header>
+    <header></header>
     <main>
+        <section id="description">
+            <h3>melancholy metal madness</h3>
+        </section>
         <section id="newsletter">
             <h2>Sign-up for Our Newsletter</h2>
             <form action="index.php" method="post">
@@ -41,52 +42,78 @@
         </section>
         <section id="music">
             <h2>Music</h2>
-            <audio controls src="includes/audio/guano_reptile.mp3"></audio>
-            <audio controls src="includes/audio/"></audio>
-            <audio controls src="includes/audio/"></audio>
-            <audio controls src="includes/audio/"></audio>
-            <audio controls src="includes/audio/"></audio>
-            <audio controls src="includes/audio/"></audio>
-            <audio controls src="includes/audio/"></audio>
-            <audio controls src="includes/audio/"></audio>
-            <audio controls src="includes/audio/"></audio>
-            <audio controls src="includes/audio/"></audio>
+            <h3><span id="title">Reptile</span></h3>
+            <audio controls src="includes/audio/reptile.wav"></audio>
+            <h3><span id="title">Strap-on</span></h3>
+            <audio controls src="includes/audio/strapon.wav"></audio>
+            <h3><span id="title">Satanic Panic 1</span></h3>
+            <audio controls src="includes/audio/satanic_panic_1.wav"></audio>
+            <h3><span id="title">Satanic Panic 2</span></h3>
+            <audio controls src="includes/audio/satinc_panic_2.wav"></audio>
+            <h3><span id="title">Satanic Panic 3</span></h3>
+            <audio controls src="includes/audio/satanic_panic_3.wav"></audio>
+            <h3><span id="title">Food</span></h3>
+            <audio controls src="includes/audio/food_with_josh.wav"></audio>
+            <h3><span id="title">The People</span></h3>
+            <audio controls src="includes/audio/the_people_with_josh.wav"></audio>
+            <h3><span id="title">Shell Shock</span></h3>
+            <audio controls src="includes/audio/shellshock.wav"></audio>
         </section>
         <section id="video">
             <h2>Videos</h2>
+            <hr color="#8A001E">
+            <h3><span id="title">Church-socks and Lotion</span></h3>
             <video controls>
-                <source src="movie.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
+                <source src="includes/videos/csal.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            <h3><span id="venue">Live at Hollywood Alley</span> <br><span id="date"> Tempe, AZ October 17, 1998</span></h3>
+            <hr color="#8A001E">
+            <h3><span id="title">Satanic Panic</span></h3>
             <video controls>
-                <source src="movie.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
+                <source src="includes/videos/satanic_panic.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            <h3><span id="venue">Live at Hollywood Alley</span> <br><span id="date"> Tempe, AZ October 17, 1998</span></h3>
+            <hr color="#8A001E">
+            <h3><span id="title">Fink</span></h3>
             <video controls>
-                <source src="movie.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
+                <source src="includes/videos/fink.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            <h3><span id="venue">Live at Hollywood Alley</span> <br><span id="date"> Tempe, AZ October 17, 1998</span></h3>
+            <hr color="#8A001E">
+            <h3><span id="title">Epitomize</span></h3>
+            <video controls>
+                <source src="includes/videos/epitomize.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3><span id="venue">Live at Hollywood Alley</span> <br><span id="date"> Tempe, AZ October 17, 1998</span></h3>
+            <hr color="#8A001E">
+            <h3><span id="title">The People</span></h3>
+            <video controls>
+                <source src="includes/videos/the_people.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3><span id="venue">Live at Hollywood Alley</span> <br><span id="date"> Tempe, AZ October 17, 1998</span></h3>
+            <hr color="#8A001E">
+            <h3><span id="title">Food/ Midget</span></h3>
             <video  controls>
-                <source src="movie.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
+                <source src="includes/videos/food_midget.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            <h3><span id="venue">Live at Hollywood Alley</span> <br><span id="date"> Tempe, AZ October 17, 1998</span></h3>
+            <hr color="#8A001E">
+            <h3><span id="title">Untitled</span></h3>
             <video controls>
-                <source src="movie.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
+                <source src="includes/videos/untitled.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <video controls>
-                <source src="movie.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
-                Your browser does not support the video tag.
-            </video>
+            <h3><span id="venue">Live at Hollywood Alley</span> <br><span id="date"> Tempe, AZ October 17, 1998</span></h3>
+            <hr color="#8A001E">
         </section>
         <section id="shows">
-            <h2>Shows</h2>
+            <h2>Upcoming Shows</h2>
             <table >
                 <tr>
                     <th>Date</th>
