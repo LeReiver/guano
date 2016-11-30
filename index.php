@@ -21,8 +21,20 @@
 <body>
     <section id="top"></section>
     <nav>
-        <ul>
-            <li><a href="#top"><img id="logo_nav" src="includes/images/guano_logo_white_black.png" width="40px"></a></li>
+        <ul class="topnav" id="myTopnav">
+            <li class="icon">
+                <a href="javascript:void(0);" onclick="show_nav()">
+                    <div class="container" onclick="hamburger(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </a>
+            </li>
+            <li><a href="#top"><img id="logo_nav" src="includes/images/guano_logo_white_black.png"
+                                    aria-hidden="true"></a></li>
+            <li><a href="#top"><img id="logo_icon_nav" src="includes/images/guano_logo_white_black.png"
+                                    aria-hidden="true"></a></li>
             <li><a href="#music"><span id="icon_nav" class="fa fa-music" aria-hidden="true"></span></a></li>
             <li><a href="#video"><span id="icon_nav" class="fa fa-video-camera" aria-hidden="true"></span></a></li>
             <li><a href="#shows"><span id="icon_nav" class="fa fa-ticket" aria-hidden="true"></span></a></li>
@@ -31,7 +43,7 @@
     <header></header>
     <main>
         <section id="description">
-            <h3>melancholy metal madness</h3>
+            <h3>melancholy metal music madness</h3>
         </section>
         <section id="newsletter">
             <h2>Sign-up for Our Newsletter</h2>
@@ -43,26 +55,26 @@
         <section id="music">
             <h2>Music</h2>
             <h3><span id="title">Reptile</span></h3>
-            <audio controls src="includes/audio/reptile.wav"></audio>
+            <audio controls src="includes/audio/reptile.mp3"></audio>
             <h3><span id="title">Strap-on</span></h3>
-            <audio controls src="includes/audio/strapon.wav"></audio>
+            <audio controls src="includes/audio/strapon.mp3"></audio>
             <h3><span id="title">Satanic Panic 1</span></h3>
-            <audio controls src="includes/audio/satanic_panic_1.wav"></audio>
+            <audio controls src="includes/audio/satanic_panic_1.mp3"></audio>
             <h3><span id="title">Satanic Panic 2</span></h3>
-            <audio controls src="includes/audio/satinc_panic_2.wav"></audio>
+            <audio controls src="includes/audio/satanic_panic_2.mp3"></audio>
             <h3><span id="title">Satanic Panic 3</span></h3>
-            <audio controls src="includes/audio/satanic_panic_3.wav"></audio>
-            <h3><span id="title">Food</span></h3>
-            <audio controls src="includes/audio/food_with_josh.wav"></audio>
+            <audio controls src="includes/audio/satanic_panic_3.mp3"></audio>
+            <h3><span id="title">Augmentation</span></h3>
+            <audio controls src="includes/audio/augmentation.mp3"></audio>
             <h3><span id="title">The People</span></h3>
-            <audio controls src="includes/audio/the_people_with_josh.wav"></audio>
+            <audio controls src="includes/audio/the_people.mp3"></audio>
             <h3><span id="title">Shell Shock</span></h3>
-            <audio controls src="includes/audio/shellshock.wav"></audio>
+            <audio controls src="includes/audio/shellshock.mp3"></audio>
         </section>
         <section id="video">
             <h2>Videos</h2>
             <hr color="#8A001E">
-            <h3><span id="title">Church-socks and Lotion</span></h3>
+            <h3><span id="title">Church Socks and Lotion</span></h3>
             <video controls>
                 <source src="includes/videos/csal.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -104,9 +116,9 @@
             </video>
             <h3><span id="venue">Live at Hollywood Alley</span> <br><span id="date"> Tempe, AZ October 17, 1998</span></h3>
             <hr color="#8A001E">
-            <h3><span id="title">Untitled</span></h3>
+            <h3><span id="title">Shell Shock</span></h3>
             <video controls>
-                <source src="includes/videos/untitled.mp4" type="video/mp4">
+                <source src="includes/videos/shell_shock.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <h3><span id="venue">Live at Hollywood Alley</span> <br><span id="date"> Tempe, AZ October 17, 1998</span></h3>
@@ -143,6 +155,38 @@
                     <td>01/20<br>2017</td>
                     <td>Jake's Hut</td>
                     <td>Boulder, CO</td>
+                    <td>
+                        <button>BUY</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>01/28<br>2017</td>
+                    <td>Nutz</td>
+                    <td>Nashville, TN</td>
+                    <td>
+                        <button>BUY</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>02/08<br>2017</td>
+                    <td>Bloques</td>
+                    <td>Springfield, MO</td>
+                    <td>
+                        <button>BUY</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>03/10<br>2017</td>
+                    <td>Starlight Cafe</td>
+                    <td>Brooklyn, NY</td>
+                    <td>
+                        <button>BUY</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>04/20<br>2017</td>
+                    <td>Loo's Place</td>
+                    <td>Augustus, Maine</td>
                     <td><button>BUY</button></td>
                 </tr>
             </table>
@@ -152,6 +196,8 @@
     <?php require ('footer.php');?>
     <!-- Requires use of smooth scrolling script for anchor tags   -->
     <?php require('includes/scripts/smooth_scroll.php');?>
+    <!-- Requires use of responsive nav script for handling responsive navigation   -->
+    <?php require('includes/scripts/responsive_nav.php'); ?>
 
 </body>
 </html>

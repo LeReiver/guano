@@ -14,46 +14,54 @@ body {
 }
 nav {
   margin: 0;
-  padding: 0;
   overflow: hidden;
   top: 0;
   position: fixed;
-  right: .5em;
+  right: .25em;
   z-index: 1000;
+  border-radius: 70px;
   ul li a #icon_nav   {
     list-style: none;
     text-decoration: none;
     display: inline;
-    float: right;
-    font-size: 8vw;
+    text-align: center;
+    font-size: 35px;
     color: #F5F5F5;
-    margin: 8px 0;
-    padding-right: 5px;
+    margin: 3px 5px;
+    padding: 2px 5px;
   }
   ul #logo_nav   {
     list-style: none;
     text-decoration: none;
-    float: left;
-    width: 12vw;
+    width: 42px;
     color: #F5F5F5;
-    margin: 8px 0;
+    margin: 15px -2px 0 0;
+    visibility: hidden;
+  }
+  ul #logo_icon_nav {
+    list-style: none;
+    text-decoration: none;
+    width: 48px;
+    color: #F5F5F5;
+    margin: 5px 0 0 5px;
   }
 }
 header {
-  background-image: url("../images/guano_logo_dark2.png");
+  background-image: url("../images/guano_logo_hero.png");
   margin: 0;
-  padding: 2%;
-  height: 60vw;
+  padding: 0;
+  height: 90vw;
   background-size: contain;
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: top center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   position: relative;
   z-index: 0;
-
 }
+
 main {
+  //margin: -1em;
   color: #72809F;
   h2 {
     color: #72809F;
@@ -64,22 +72,28 @@ main {
   }
   #description {
     h3 {
+      font-family: Voltaire, sans-serif;
       background-color: #1B1E23;
-      font-size: 5vw;
+      font-size: 5.5vw;
       z-index: 3;
       color: #D5D1D9;
-      margin: 0 2%;
+      margin: 0;
+      padding-bottom: 1em;
       text-align: center;
+      text-transform: uppercase;
     }
   }
   #newsletter {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
     input[type=email] {
       width: 100%;
       height: 40px;
       padding: 1%;
       border-top: #8A001E 2px solid;
       border-bottom: #8A001E 2px solid;
-      background-color: #D5D1D9;
+      background-color: #F5F5F5;
       font-size: 15px;
       font-family: 'Signika Negative', sans-serif;
       text-align: center;
@@ -91,7 +105,7 @@ main {
       padding: 1%;
       border-top: #8A001E 2px solid;
       border-bottom: #8A001E 2px solid;
-      background-color: #D5D1D9;
+      background-color: #F5F5F5;
       font-size: 15px;
       font-family: 'Signika Negative', sans-serif;
       text-align: center;
@@ -104,8 +118,10 @@ main {
 
   #music {
     color: #D5D1D9;
+    text-align: center;
+    margin: 0 auto;
     audio {
-      width: 100%;
+      width: 90%;
     }
     #title {
       font-weight: 300;
@@ -139,13 +155,14 @@ main {
     }
   }
   #shows {
-       table {
+    border-bottom: #72809F 8px solid;
+    table {
          width: 100%;
          th  {
            padding: 3%;
            border-top: #8A001E 2px solid;
            border-bottom: #8A001E 2px solid;
-           background-color: #D5D1D9;
+           background-color: #FFF;
            font-size: 5vw;
          }
          td {
@@ -158,6 +175,19 @@ main {
 }
 
 footer {
+  padding: 20px 0;
+  #booking {
+    h3 {
+      text-align: center;
+      color: #F5F5F5;
+      padding: 0;
+    }
+    p {
+      text-align: center;
+      color: #D5D1D9;
+      padding: 0;
+    }
+  }
   #social {
     text-align: center;
     #footer_nav {
@@ -169,7 +199,8 @@ footer {
   }
   #copyright {
     text-align: center;
-    color: #D5D1D9;
+    color: #F5F5F5;
     padding: 20px 0;
   }
 }
+

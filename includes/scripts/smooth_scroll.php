@@ -3,7 +3,7 @@
  * Programmer: Chris Coyier: https://css-tricks.com/snippets/jquery/smooth-scrolling/
  * Date: 11/26/16
  * Time: 8:34 AM
- * File: smooth_scroll.php
+ * File: smooth_scroll.js.php
  * Description: A function that provides smooth animated scrolling.
  */
 ?>
@@ -16,10 +16,11 @@
                 if (target.length) {
                     $('html, body').animate({
                         scrollTop: target.offset().top
-                    }, 1000);
+                    }, 1500);
                     return false;
                 }
             }
         });
     });
+
 </script>
