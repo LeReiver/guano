@@ -59,7 +59,7 @@
                 <audio controls src="includes/audio/reptile.mp3"></audio>
             </div>
             <div id="song">
-                <h3><span id="title">Strap-on</span></h3>
+                <h3><span id="title">Strap On</span></h3>
                 <audio controls src="includes/audio/strapon.mp3"></audio>
             </div>
             <div id="song">
@@ -142,7 +142,7 @@
         </section>
         <section id="shows">
             <h2>Join Us</h2>
-            <table >
+            <table>
                 <tr>
                     <th>Date</th>
                     <th>Venue</th>

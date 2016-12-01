@@ -9,7 +9,7 @@
 ?>
 <footer>
     <section id="booking">
-        <h3>Contact Us for Booking:</h3>
+        <h3>Contact us for booking:</h3>
         <p><a href="mailto:booking@guano.com">booking@guano.com</a> &nbsp;| +1-666-000-0000</p>
     </section>
     <section id="social">
@@ -24,6 +24,6 @@
         <img src="includes/images/flyer_wht_2.png">
     </section>
     <section id="copyright">
-        &copy; 2016 Guano | Designed by LeReiver
+        &copy; 2016 Guano | Designed by <a href="http://lereiver.com" target="_blank">LeReiver</a>
     </section>
 </footer>
