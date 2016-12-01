@@ -46,33 +46,49 @@
             <h3>melancholy metal music madness</h3>
         </section>
         <section id="newsletter">
-            <h2>Sign-up for Our Newsletter</h2>
+            <!--            <h2>Sign-up</h2>-->
             <form action="index.php" method="post">
-                <input type="email" name="email" placeholder="Please Enter Your Email">
+                <input type="email" name="email" placeholder="Enter email to join newsletter">
                 <input id="submit" name="submit" type="submit" value="Submit">
             </form>
         </section>
         <section id="music">
-            <h2>Music</h2>
-            <h3><span id="title">Reptile</span></h3>
-            <audio controls src="includes/audio/reptile.mp3"></audio>
-            <h3><span id="title">Strap-on</span></h3>
-            <audio controls src="includes/audio/strapon.mp3"></audio>
-            <h3><span id="title">Satanic Panic 1</span></h3>
-            <audio controls src="includes/audio/satanic_panic_1.mp3"></audio>
-            <h3><span id="title">Satanic Panic 2</span></h3>
-            <audio controls src="includes/audio/satanic_panic_2.mp3"></audio>
-            <h3><span id="title">Satanic Panic 3</span></h3>
-            <audio controls src="includes/audio/satanic_panic_3.mp3"></audio>
-            <h3><span id="title">Augmentation</span></h3>
-            <audio controls src="includes/audio/augmentation.mp3"></audio>
-            <h3><span id="title">The People</span></h3>
-            <audio controls src="includes/audio/the_people.mp3"></audio>
-            <h3><span id="title">Shell Shock</span></h3>
-            <audio controls src="includes/audio/shellshock.mp3"></audio>
+            <h2>Listen</h2>
+            <div id="song">
+                <h3><span id="title">Reptile</span></h3>
+                <audio controls src="includes/audio/reptile.mp3"></audio>
+            </div>
+            <div id="song">
+                <h3><span id="title">Strap-on</span></h3>
+                <audio controls src="includes/audio/strapon.mp3"></audio>
+            </div>
+            <div id="song">
+                <h3><span id="title">Satanic Panic 1</span></h3>
+                <audio controls src="includes/audio/satanic_panic_1.mp3"></audio>
+            </div>
+            <div id="song">
+                <h3><span id="title">Satanic Panic 2</span></h3>
+                <audio controls src="includes/audio/satanic_panic_2.mp3"></audio>
+            </div>
+            <div id="song">
+                <h3><span id="title">Satanic Panic 3</span></h3>
+                <audio controls src="includes/audio/satanic_panic_3.mp3"></audio>
+            </div>
+            <div id="song">
+                <h3><span id="title">Augmentation</span></h3>
+                <audio controls src="includes/audio/augmentation.mp3"></audio>
+            </div>
+            <div id="song">
+                <h3><span id="title">The People</span></h3>
+                <audio controls src="includes/audio/the_people.mp3"></audio>
+            </div>
+            <div id="song">
+                <h3><span id="title">Shell Shock</span></h3>
+                <audio controls src="includes/audio/shellshock.mp3"></audio>
+            </div>
         </section>
         <section id="video">
-            <h2>Videos</h2>
+            <h2>Watch</h2>
             <hr color="#8A001E">
             <h3><span id="title">Church Socks and Lotion</span></h3>
             <video controls>
@@ -125,7 +141,7 @@
             <hr color="#8A001E">
         </section>
         <section id="shows">
-            <h2>Upcoming Shows</h2>
+            <h2>Join Us</h2>
             <table >
                 <tr>
                     <th>Date</th>

@@ -32,7 +32,6 @@
 .container.change {
     right: 1em;
     margin-top: -1em;
-/ / padding: 0;
 }
 
 .change .bar1 {
@@ -107,6 +106,7 @@ ul.topnav li.icon {
         position: relative;
         padding: 0;
         background-color: #1B1E23;
+        height: 110%;
     }
 
     ul.topnav.responsive li.icon {
@@ -123,6 +123,8 @@ ul.topnav li.icon {
     ul.topnav.responsive li a {
         display: block;
         text-align: left;
+        margin-bottom: 5px;
+        padding: 0;
     }
 }
 

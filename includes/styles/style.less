@@ -27,8 +27,8 @@ nav {
     text-align: center;
     font-size: 35px;
     color: #F5F5F5;
-    margin: 3px 5px;
-    padding: 2px 5px;
+    margin: 5px 5px;
+    padding: 5px 5px;
   }
   ul #logo_nav   {
     list-style: none;
@@ -41,7 +41,7 @@ nav {
   ul #logo_icon_nav {
     list-style: none;
     text-decoration: none;
-    width: 48px;
+    width: 42px;
     color: #F5F5F5;
     margin: 5px 0 0 5px;
   }
@@ -61,7 +61,6 @@ header {
 }
 
 main {
-  //margin: -1em;
   color: #72809F;
   h2 {
     color: #72809F;
@@ -69,50 +68,48 @@ main {
     font-size: 2.25em;
     text-align: center;
     margin: .75em 0;
+    text-transform: uppercase;
   }
   #description {
     h3 {
       font-family: Voltaire, sans-serif;
       background-color: #1B1E23;
-      font-size: 5.5vw;
+      font-size: 6.75vw;
       z-index: 3;
       color: #D5D1D9;
-      margin: 0;
+      margin: .5em 0 0 0;
       padding-bottom: 1em;
       text-align: center;
       text-transform: uppercase;
     }
   }
   #newsletter {
-    width: 90%;
+    width: 92%;
     text-align: center;
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
     input[type=email] {
       width: 100%;
-      height: 40px;
+      height: 35px;
       padding: 1%;
-      border-top: #8A001E 2px solid;
-      border-bottom: #8A001E 2px solid;
+      border: #72809F 2px solid;
       background-color: #F5F5F5;
-      font-size: 15px;
+      font-size: 18px;
       font-family: 'Signika Negative', sans-serif;
       text-align: center;
-      color: rgba(0, 0, 0, 0.71);
+      color: rgba(0, 0, 0, 0.95);
+      font-weight: 700;
     }
     input[type=submit] {
-      width: 100%;
-      height: 30px;
-      padding: 1%;
-      border-top: #8A001E 2px solid;
-      border-bottom: #8A001E 2px solid;
+      margin-top: 10px;
+      width: 40%;
+      height: 32px;
+      border: #72809F 2px solid;
+      //border-bottom: #8A001E 2px solid;
       background-color: #F5F5F5;
       font-size: 15px;
       font-family: 'Signika Negative', sans-serif;
       text-align: center;
-      color: rgba(0, 0, 0, 0.71);
-      border-radius: 5%;
-      -moz-border-radius: 5%;
-      -webkit-border-radius: 5%;
+      color: #1B1E23;
     }
   }
 
@@ -120,14 +117,27 @@ main {
     color: #D5D1D9;
     text-align: center;
     margin: 0 auto;
+    padding: 20px 0;
+    h3 {
+      text-align: start;
+      margin: 0 0 5px 20px;
+      color: #D5D1D9;
+    }
     audio {
       width: 90%;
     }
     #title {
       font-weight: 300;
-      margin: 40px 0 5px 10px;
+      margin: 40px 0 0 10px;
       width: 100%;
       font-size: 1.25em;
+      padding: 20px 0;
+    }
+    #song {
+      margin: 30px 0;
+      //border-top: #D5D1D9 2px solid;
+      //border-bottom: #D5D1D9 2px solid;
+      //background-color: #72809F;
     }
   }
   #video {
@@ -176,6 +186,7 @@ main {
 
 footer {
   padding: 20px 0;
+  color: #D5D1D9;
   #booking {
     h3 {
       text-align: center;
@@ -186,6 +197,13 @@ footer {
       text-align: center;
       color: #D5D1D9;
       padding: 0;
+    }
+    a {
+      text-decoration: none;
+      color: #D5D1D9;
+    }
+    a:hover {
+      color: #8A001E;
     }
   }
   #social {
