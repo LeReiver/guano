@@ -10,12 +10,10 @@ body {
   background-color: #1B1E23;
   font-family: 'Signika Negative', sans-serif;
 }
-
 body a {
   text-decoration: none;
   color: #D5D1D9;
 }
-
 body a:hover {
   color: #8A001E;
 }
@@ -184,7 +182,6 @@ main #shows table td {
   color: #D5D1D9;
   font-size: 4vw;
 }
-
 main #shows table td button {
   color: #8A001E;
   background-color: #D5D1D9;
