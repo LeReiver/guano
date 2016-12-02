@@ -6,6 +6,8 @@
  * File Name: footer.php
  * Description: Footer code for Guano
  */
+
+require_once('includes/scripts/image_slider.php');
 ?>
 <footer>
     <section id="booking">
@@ -20,8 +22,9 @@
         <a href="http://instagram.com/" target="_blank"><span id="footer_nav" class="fa fa-instagram"
                                                               aria-hidden="true"></span></a>
     </section>
-    <section id="footer_img">
-        <img src="includes/images/flyer_wht_2.png">
+    <section id="footer_img" class=" w3-content">
+        <img class="img_slider w3-animate wait" style="width:100%" src="includes/images/flyer_wht_2.png">
+        <img class="img_slider w3-animate wait" style="width:100%" src="includes/images/flyer_wht_1.png">
     </section>
     <section id="copyright">
         &copy; 2016 Guano | Designed by <a href="http://lereiver.com" target="_blank">LeReiver</a>

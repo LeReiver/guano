@@ -214,6 +214,8 @@
     <?php require('includes/scripts/smooth_scroll.php');?>
     <!-- Requires use of responsive nav script for handling responsive navigation   -->
     <?php require('includes/scripts/responsive_nav.php'); ?>
+    <!-- Requires use of image slider script for handling footer slide show   -->
+    <?php require('includes/scripts/image_slider.php'); ?>
 
 </body>
 </html>
