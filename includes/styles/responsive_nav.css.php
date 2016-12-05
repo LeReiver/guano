@@ -21,12 +21,20 @@
     margin: 0;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1, .bar3 {
     width: 30px;
     height: 4px;
     background-color: #F5F5F5;
     margin: 6px 0;
     transition: 0.8s;
+}
+
+.bar2 {
+    width: 30px;
+    height: 4px;
+    background-color: #F5F5F5;
+    margin: 6px 0;
+    transition: 0.3s;
 }
 
 .container.change {
@@ -35,9 +43,9 @@
 }
 
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-    width: 30px;
+    -webkit-transform: rotate(90deg) translate(12px, -6px);
+    transform: rotate(90deg) translate(12px, -6px);
+    width: 40px;
 }
 
 .change .bar2 {
@@ -45,8 +53,8 @@
 }
 
 .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+    -webkit-transform: rotate(0deg) translate(11px, 0px);
+    transform: rotate(0deg) translate(11px, 0px);
     width: 30px;
 }
 
@@ -88,7 +96,9 @@ ul.topnav li.icon {
     display: none;
 }
 
-/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home").
+    Show the list item that contains the link to open and close the topnav (li.icon)
+*/
 @media screen and (max-width: 680px) {
     ul.topnav li:not(:first-child) {
         display: none;
@@ -96,11 +106,13 @@ ul.topnav li.icon {
 
     ul.topnav li.icon {
         float: right;
-        display: inline-block;
+        display: inline;
     }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.
+    This class makes the topnav look good on small screens
+*/
 @media screen and (max-width: 680px) {
     ul.topnav.responsive {
         position: relative;
@@ -117,11 +129,11 @@ ul.topnav li.icon {
 
     ul.topnav.responsive li {
         float: none;
-        display: inline;
+        display: block;
     }
 
     ul.topnav.responsive li a {
-        display: block;
+        display: inline-block;
         text-align: left;
         margin-bottom: 5px;
         padding: 0;
