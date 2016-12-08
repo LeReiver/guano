@@ -43,7 +43,7 @@
     <header></header>
     <main>
         <section id="description">
-            <h3>melancholy metal music madness</h3>
+            <h3>strange music for strange people</h3>
         </section>
         <section id="newsletter">
             <!--            <h2>Sign-up</h2>-->
@@ -54,91 +54,89 @@
         </section>
         <section id="music">
             <h2>Listen</h2>
-            <div id="song">
-                <h3><span id="title">Reptile</span></h3>
-                <audio controls src="includes/audio/reptile.mp3"></audio>
-            </div>
-            <div id="song">
-                <h3><span id="title">Strap On</span></h3>
-                <audio controls src="includes/audio/strapon.mp3"></audio>
-            </div>
-            <div id="song">
-                <h3><span id="title">Satanic Panic 1</span></h3>
-                <audio controls src="includes/audio/satanic_panic_1.mp3"></audio>
-            </div>
-            <div id="song">
-                <h3><span id="title">Satanic Panic 2</span></h3>
-                <audio controls src="includes/audio/satanic_panic_2.mp3"></audio>
-            </div>
-            <div id="song">
-                <h3><span id="title">Satanic Panic 3</span></h3>
-                <audio controls src="includes/audio/satanic_panic_3.mp3"></audio>
-            </div>
-            <div id="song">
-                <h3><span id="title">Augmentation</span></h3>
-                <audio controls src="includes/audio/augmentation.mp3"></audio>
-            </div>
-            <div id="song">
-                <h3><span id="title">The People</span></h3>
-                <audio controls src="includes/audio/the_people.mp3"></audio>
-            </div>
-            <div id="song">
-                <h3><span id="title">Shell Shock</span></h3>
-                <audio controls src="includes/audio/shellshock.mp3"></audio>
-            </div>
+
+
+            <!-- Requires use of audio container page for showing audio container   -->
+            <?php require_once('audio_player.php'); ?>
+            <!--            <div id="song">-->
+            <!--                <h3><span id="title">Reptile</span></h3>-->
+            <!--                <audio controls src="includes/audio/reptile.mp3"></audio>-->
+            <!--            </div>-->
+            <!--            <div id="song">-->
+            <!--                <h3><span id="title">Strap On</span></h3>-->
+            <!--                <audio controls src="includes/audio/strapon.mp3"></audio>-->
+            <!--            </div>-->
+            <!--            <div id="song">-->
+            <!--                <h3><span id="title">Satanic Panic 1</span></h3>-->
+            <!--                <audio controls src="includes/audio/satanic_panic_1.mp3"></audio>-->
+            <!--            </div>-->
+            <!--            <div id="song">-->
+            <!--                <h3><span id="title">Satanic Panic 2</span></h3>-->
+            <!--                <audio controls src="includes/audio/satanic_panic_2.mp3"></audio>-->
+            <!--            </div>-->
+            <!--            <div id="song">-->
+            <!--                <h3><span id="title">Satanic Panic 3</span></h3>-->
+            <!--                <audio controls src="includes/audio/satanic_panic_3.mp3"></audio>-->
+            <!--            </div>-->
+            <!--            <div id="song">-->
+            <!--                <h3><span id="title">Augmentation</span></h3>-->
+            <!--                <audio controls src="includes/audio/augmentation.mp3"></audio>-->
+            <!--            </div>-->
+            <!--            <div id="song">-->
+            <!--                <h3><span id="title">The People</span></h3>-->
+            <!--                <audio controls src="includes/audio/the_people.mp3"></audio>-->
+            <!--            </div>-->
+            <!--            <div id="song">-->
+            <!--                <h3><span id="title">Shell Shock</span></h3>-->
+            <!--                <audio controls src="includes/audio/shellshock.mp3"></audio>-->
+            <!--            </div>-->
         </section>
         <section id="video">
             <h2>Watch</h2>
-            <hr color="#8A001E">
+            <!--            <hr color="#8A001E">-->
             <h3><span id="title">Church Socks and Lotion</span></h3>
+            <span id="venue">Live at Hollywood Alley</span> <br><span id="date">- Tempe, AZ October 17, 1998</span>
             <video controls>
                 <source src="includes/videos/csal.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <h3><span id="venue">Live at Hollywood Alley</span> <br><span id="date"> Tempe, AZ October 17, 1998</span></h3>
-            <hr color="#8A001E">
+            <!--            <hr color="#8A001E">-->
             <h3><span id="title">Satanic Panic</span></h3>
+            <span id="venue">Live at Hollywood Alley</span> <br><span id="date">- Tempe, AZ October 17, 1998</span>
             <video controls>
                 <source src="includes/videos/satanic_panic.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <h3><span id="venue">Live at Hollywood Alley</span> <br><span id="date"> Tempe, AZ October 17, 1998</span></h3>
-            <hr color="#8A001E">
             <h3><span id="title">Fink</span></h3>
+            <span id="venue">Live at Hollywood Alley</span> <br><span id="date">- Tempe, AZ October 17, 1998</span>
             <video controls>
                 <source src="includes/videos/fink.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <h3><span id="venue">Live at Hollywood Alley</span> <br><span id="date"> Tempe, AZ October 17, 1998</span></h3>
-            <hr color="#8A001E">
             <h3><span id="title">Epitomize</span></h3>
+            <span id="venue">Live at Hollywood Alley</span> <br><span id="date">- Tempe, AZ October 17, 1998</span>
             <video controls>
                 <source src="includes/videos/epitomize.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <h3><span id="venue">Live at Hollywood Alley</span> <br><span id="date"> Tempe, AZ October 17, 1998</span></h3>
-            <hr color="#8A001E">
             <h3><span id="title">The People</span></h3>
+            <span id="venue">Live at Hollywood Alley</span> <br><span id="date">- Tempe, AZ October 17, 1998</span>
             <video controls>
                 <source src="includes/videos/the_people.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <h3><span id="venue">Live at Hollywood Alley</span> <br><span id="date"> Tempe, AZ October 17, 1998</span></h3>
-            <hr color="#8A001E">
             <h3><span id="title">Food/ Midget</span></h3>
+            <span id="venue">Live at Hollywood Alley</span> <br><span id="date">- Tempe, AZ October 17, 1998</span>
             <video  controls>
                 <source src="includes/videos/food_midget.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <h3><span id="venue">Live at Hollywood Alley</span> <br><span id="date"> Tempe, AZ October 17, 1998</span></h3>
-            <hr color="#8A001E">
             <h3><span id="title">Shell Shock</span></h3>
+            <span id="venue">Live at Hollywood Alley</span> <br><span id="date">- Tempe, AZ October 17, 1998</span>
             <video controls>
                 <source src="includes/videos/shell_shock.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <h3><span id="venue">Live at Hollywood Alley</span> <br><span id="date"> Tempe, AZ October 17, 1998</span></h3>
-            <hr color="#8A001E">
         </section>
         <section id="shows">
             <h2>Join Us</h2>
@@ -216,6 +214,8 @@
     <?php require('includes/scripts/responsive_nav.php'); ?>
     <!-- Requires use of image slider script for handling footer slide show   -->
     <?php require('includes/scripts/image_slider.php'); ?>
+    <!-- Requires use of audio container script for handling audio container   -->
+    <?php require('includes/scripts/audio_container.php'); ?>
 
 </body>
 </html>

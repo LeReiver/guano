@@ -34,7 +34,7 @@
     height: 4px;
     background-color: #F5F5F5;
     margin: 6px 0;
-    transition: 0.3s;
+    transition: 1s;
 }
 
 .container.change {
@@ -49,7 +49,8 @@
 }
 
 .change .bar2 {
-    opacity: 0;
+    -webkit-transform: rotate(450deg) translate(8px, -11px);
+    transform: rotate(450deg) translate(8px, -11px);
 }
 
 .change .bar3 {
@@ -119,6 +120,7 @@ ul.topnav li.icon {
         padding: 0;
         background-color: #1B1E23;
         height: 110%;
+        transition: 1.5s;
     }
 
     ul.topnav.responsive li.icon {

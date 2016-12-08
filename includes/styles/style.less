@@ -9,11 +9,12 @@
 /* Global Styles */
 
 body {
-  background-color: #1B1E23;
   font-family: 'Signika Negative', sans-serif;
+  background-color: #1B1E23;
   a {
     text-decoration: none;
     color: #D5D1D9;
+    font-size: 1.5em;
   }
   a:hover {
     color: #8A001E;
@@ -54,6 +55,7 @@ nav {
   }
 }
 header {
+  background-color: #1B1E23;
   background-image: url("../images/guano_logo_hero.png");
   margin: 0;
   padding: 0;
@@ -70,36 +72,49 @@ header {
 main {
   color: #72809F;
   h2 {
-    color: #72809F;
+    color: #D5D1D9;
     font-family: Voltaire, sans-serif;
     font-size: 2.25em;
+    font-weight: 500;
     text-align: center;
-    margin: .75em 0;
+    margin-bottom: 10px;
     text-transform: uppercase;
+    background-color: transparent;
   }
   #description {
+    border-top: double;
+    border-bottom: double #72809F;
+    background-color: transparent;
+    background-image: url("../images/texture.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+    z-index: 1;
+    height: 80%;
     h3 {
       font-family: Voltaire, sans-serif;
-      background-color: #1B1E23;
-      font-size: 6.75vw;
+      font-size: 6.25vw;
       font-weight: 600;
-      z-index: 3;
-      color: #D5D1D9;
+      color: #F5F5F5;
       margin: .5em 0 0 0;
-      padding-bottom: 1em;
+      padding-bottom: 10px;
       text-align: center;
       text-transform: uppercase;
+      z-index: 3;
+    }
+    p {
+      color: #F5F5F5;
+      text-align: center;
+      font-size: 5vw;
     }
   }
   #newsletter {
     width: 92%;
     text-align: center;
-    margin: 20px auto 0 auto;
+    margin: 40px auto;
     input[type=email] {
       width: 100%;
       height: 35px;
       padding: 1%;
-      border: #72809F 2px solid;
       background-color: #F5F5F5;
       font-size: 18px;
       font-family: 'Signika Negative', sans-serif;
@@ -122,14 +137,24 @@ main {
   }
 
   #music {
-    color: #D5D1D9;
+    color: #1B1E23;
+    background-color: #1B1E23;
+    border-top: double #72809F;
+    border-bottom: double #72809F;
     text-align: center;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px 0 10px 0;
+    background-image: url("../images/texture.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+    h2 {
+      font-weight: 500;
+    }
     h3 {
       text-align: start;
       margin: 0 0 5px 20px;
-      color: #D5D1D9;
+      color: #1B1E23;
+      background-color: transparent;
     }
     audio {
       width: 90%;
@@ -146,31 +171,46 @@ main {
     }
   }
   #video {
+    padding-top: 20px;
+    //background-color: #000;
     h2 {
-      background-color: #1B1E23;
+      //background-color: #000;
+      font-weight: 500;
+      margin-bottom: 10px;
     }
-
+    h3 {
+      padding: 10px;
+      font-size: 1.25em;
+    }
     color: #D5D1D9;
     video {
-      margin: 10px 0 0 0;
+      margin: 10px 0 25px 0;
       width: 100%;
+      border-top: double #72809F;
+      border-bottom: double #72809F;
     }
     #title {
       font-weight: 300;
-      margin: 40px 0 30px 10px;
+      margin: 40px 0 50px 10px;
       width: 100%;
       font-size: 1.25em;
     }
     #venue {
-      margin: 5px 0 25px 10px;
+      margin: 0 0 25px 30px;
+      color: #D5D1D9;
     }
     #date {
-      margin: 10px;
+      margin: 0 0 0 30px;
+      color: #D5D1D9;
     }
   }
   #shows {
-    border-bottom: #8A001E 8px solid;
-    padding-bottom: 20px;
+    padding: 20px 0;
+    border-bottom: double #72809F;
+    h2 {
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
     table {
       width: 100%;
       th {
@@ -187,7 +227,7 @@ main {
         font-size: 4vw;
         button {
           color: #8A001E;
-          background-color: #D5D1D9;
+          background-color: #F5F5F5;
           border: #72809F 2px solid;
           font-weight: 700;
           height: 30px;
@@ -201,6 +241,10 @@ main {
 footer {
   padding: 20px 0;
   color: #D5D1D9;
+  border-top: double #72809F;
+  a {
+    font-size: 1em;
+  }
   #booking {
     h3 {
       text-align: center;
