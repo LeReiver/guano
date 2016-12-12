@@ -32,9 +32,9 @@
                 </a>
             </li>
             <li><a href="#top"><img id="logo_nav" src="includes/images/guano_logo_white_black.png"
-                                    aria-hidden="true"></a></li>
+                                    aria-hidden="true" alt="Guano logo navigation image"></a></li>
             <li><a href="#top"><img id="logo_icon_nav" src="includes/images/guano_logo_white_black.png"
-                                    aria-hidden="true"></a></li>
+                                    aria-hidden="true" alt="Guano logo navigation image"></a></li>
             <li><a href="#music"><span id="icon_nav" class="fa fa-music" aria-hidden="true"></span></a></li>
             <li><a href="#video"><span id="icon_nav" class="fa fa-video-camera" aria-hidden="true"></span></a></li>
             <li><a href="#shows"><span id="icon_nav" class="fa fa-ticket" aria-hidden="true"></span></a></li>
@@ -45,11 +45,14 @@
         <section id="description">
             <h3>strange music for strange people</h3>
         </section>
-        <section id="newsletter">
-            <!--            <h2>Sign-up</h2>-->
+        <section id="newsletter" class="section group">
             <form action="index.php" method="post">
-                <input type="email" name="email" placeholder="Enter email to join newsletter">
-                <input id="submit" name="submit" type="submit" value="Submit">
+                <div class="col span_9_of_12">
+                    <input type="email" name="email" autofocus placeholder="Enter email to join newsletter">
+                </div>
+                <div class="col span_3_of_12">
+                    <input id="submit" name="submit" type="submit" value="Submit">
+                </div>
             </form>
         </section>
         <section id="music">
@@ -90,17 +93,78 @@
             <!--                <h3><span id="title">Shell Shock</span></h3>-->
             <!--                <audio controls src="includes/audio/shellshock.mp3"></audio>-->
             <!--            </div>-->
+
+            <!---->
+            <!--            <div class="mainContainer">-->
+            <!--                <table style="width:100%">-->
+            <!--                    <tr><td valign="top">-->
+            <!--                            <div class="containerPlayer">-->
+            <!--                                <div id="listContainer" class="playlistContainer">-->
+            <!--                                    <ul id="playListContainer">-->
+            <!--                                        <li data-src="includes/audio/reptile.mp3">-->
+            <!--                                            <a href="#">Reptile</a>-->
+            <!--                                        </li>-->
+            <!--                                        <li data-src="includes/audio/shellshock.mp3">-->
+            <!--                                            <a href="#">Shell Shock</a>-->
+            <!--                                        </li>-->
+            <!--                                        <li data-src="includes/audio/strapon.mp3">-->
+            <!--                                            <a href="#">Strap On</a>-->
+            <!--                                        </li>-->
+            <!--                                        <li data-src="includes/audio/the_people.mp3">-->
+            <!--                                            <a href="#">The People</a>-->
+            <!--                                        </li>-->
+            <!--                                        <li data-src="includes/audio/fink.mp3">-->
+            <!--                                            <a href="#">Fink</a>-->
+            <!--                                        </li>-->
+            <!--                                    </ul>-->
+            <!--                                </div>-->
+            <!--                                <div id="playerContainer">-->
+            <!--                                    <div id="controlContainer">-->
+            <!--                                        <ul class="controls">-->
+            <!--                                            <li>-->
+            <!--                                                <a href="#" class="shuffle shuffleActive" data-attr="shuffled"></a>-->
+            <!--                                            </li>-->
+            <!--                                            <li>-->
+            <!--                                                <a href="#" class="left" data-attr="prevAudio"></a>-->
+            <!--                                            </li>-->
+            <!--                                            <li>-->
+            <!--                                                <a href="#" class="play" data-attr="playPauseAudio"></a>-->
+            <!--                                            </li>-->
+            <!--                                            <li>-->
+            <!--                                                <a href="#" class="right" data-attr="nextAudio"></a>-->
+            <!--                                            </li>-->
+            <!--                                            <li>-->
+            <!--                                                <a href="#" class="repeat" data-attr="repeatSong"></a>-->
+            <!--                                            </li>-->
+            <!--                                        </ul>-->
+            <!--                                        <div class="audioDetails">-->
+            <!--                                            <span class="songPlay"></span>-->
+            <!--                                            <span data-attr="timer" class="audioTime"></span>-->
+            <!--                                        </div>-->
+            <!--                                        <div class="progress">-->
+            <!--                                            <div data-attr="seekableTrack" class="seekableTrack"></div>-->
+            <!--                                            <div class="updateProgress"></div>-->
+            <!--                                        </div>-->
+            <!---->
+            <!--                                    </div>-->
+            <!---->
+            <!--                                    <div class="volumeControl">-->
+            <!--                                        <div class="volume volume1"></div>-->
+            <!--                                        <input class="bar" data-attr="rangeVolume" type="range" min="0" max="1" step="0.1" value="0.7" />-->
+            <!--                                    </div>-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+            <!--                        </td>-->
+            <!--                </table>-->
         </section>
         <section id="video">
             <h2>Watch</h2>
-            <!--            <hr color="#8A001E">-->
             <h3><span id="title">Church Socks and Lotion</span></h3>
             <span id="venue">Live at Hollywood Alley</span> <br><span id="date">- Tempe, AZ October 17, 1998</span>
             <video controls>
                 <source src="includes/videos/csal.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <!--            <hr color="#8A001E">-->
             <h3><span id="title">Satanic Panic</span></h3>
             <span id="venue">Live at Hollywood Alley</span> <br><span id="date">- Tempe, AZ October 17, 1998</span>
             <video controls>
@@ -127,7 +191,7 @@
             </video>
             <h3><span id="title">Food/ Midget</span></h3>
             <span id="venue">Live at Hollywood Alley</span> <br><span id="date">- Tempe, AZ October 17, 1998</span>
-            <video  controls>
+            <video controls>
                 <source src="includes/videos/food_midget.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -137,7 +201,6 @@
                 <source src="includes/videos/shell_shock.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-        </section>
         <section id="shows">
             <h2>Join Us</h2>
             <table>
@@ -148,7 +211,7 @@
                     <th>Tickets</th>
                 </tr>
                 <tr>
-                    <td>12/18<br>2016</td>
+                    <td>12/22<br>2016</td>
                     <td>The Nile</td>
                     <td>Phoenix, AZ</td>
                     <td><button>BUY</button></td>
@@ -181,28 +244,6 @@
                         <button>BUY</button>
                     </td>
                 </tr>
-                <tr>
-                    <td>02/08<br>2017</td>
-                    <td>Bloques</td>
-                    <td>Springfield, MO</td>
-                    <td>
-                        <button>BUY</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>03/10<br>2017</td>
-                    <td>Starlight Cafe</td>
-                    <td>Brooklyn, NY</td>
-                    <td>
-                        <button>BUY</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>04/20<br>2017</td>
-                    <td>Loo's Place</td>
-                    <td>Augustus, Maine</td>
-                    <td><button>BUY</button></td>
-                </tr>
             </table>
         </section>
     </main>
@@ -214,8 +255,7 @@
     <?php require('includes/scripts/responsive_nav.php'); ?>
     <!-- Requires use of image slider script for handling footer slide show   -->
     <?php require('includes/scripts/image_slider.php'); ?>
-    <!-- Requires use of audio container script for handling audio container   -->
+    <!-- Requires use of audio player script for playing audio   -->
     <?php require('includes/scripts/audio_container.php'); ?>
-
 </body>
 </html>

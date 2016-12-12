@@ -49,14 +49,14 @@ nav {
   ul #logo_icon_nav {
     list-style: none;
     text-decoration: none;
-    width: 42px;
+    width: 44px;
     color: #F5F5F5;
     margin: 5px 0 0 5px;
   }
 }
 header {
   background-color: #1B1E23;
-  background-image: url("../images/guano_logo_hero.png");
+  background-image: url("../images/guano_logo_lg.png");
   margin: 0;
   padding: 0;
   height: 90vw;
@@ -110,7 +110,7 @@ main {
   #newsletter {
     width: 92%;
     text-align: center;
-    margin: 40px auto;
+    margin: 20px auto;
     input[type=email] {
       width: 100%;
       height: 35px;
@@ -121,11 +121,12 @@ main {
       text-align: center;
       color: rgba(0, 0, 0, 0.95);
       font-weight: 700;
+
     }
     input[type=submit] {
-      margin-top: 10px;
       width: 40%;
-      height: 32px;
+      height: 35px;
+      margin-top: 5px;
       border: #72809F 2px solid;
       background-color: #F5F5F5;
       color: #8A001E;
@@ -133,6 +134,7 @@ main {
       font-size: 15px;
       font-family: 'Signika Negative', sans-serif;
       text-align: center;
+      cursor: pointer;
     }
   }
 
@@ -239,7 +241,7 @@ main {
 }
 
 footer {
-  padding: 20px 0;
+  padding: 40px 0;
   color: #D5D1D9;
   border-top: double #72809F;
   a {
@@ -247,6 +249,7 @@ footer {
   }
   #booking {
     h3 {
+      margin: 20px 0 0 0;
       text-align: center;
       color: #F5F5F5;
     }
@@ -260,8 +263,8 @@ footer {
     text-align: center;
     #footer_nav {
       color: #D5D1D9;
-      padding: 20px 0 0 0;
-      margin: 10px 8px 0 8px;
+      padding: 10px 0 0 0;
+      margin: 5px 8px 0 8px;
       font-size: 1.75em;
     }
   }
@@ -271,5 +274,256 @@ footer {
     padding: 20px 0;
   }
 }
+
+/*  LAYOUT BELOW 280 PIXELS */
+@media only screen and (max-width: 280px) {
+  /* Global */
+  body {
+    min-width: 270px;
+  }
+
+  /* Header */
+  header {
+
+  }
+
+  /* Navigation */
+  nav {
+
+  }
+}
+
+/*  LAYOUT ABOVE 300 PIXELS */
+@media only screen and (min-width: 300px) {
+  /* Header */
+  header {
+
+  }
+
+  /* Navigation */
+  nav {
+
+  }
+}
+
+/*  LAYOUT ABOVE 380 PIXELS */
+@media only screen and (min-width: 380px) {
+  /* Header */
+  header {
+
+  }
+
+  /* Navigation */
+  nav {
+
+  }
+}
+
+/*  LAYOUT ABOVE 465 PIXELS */
+@media only screen and (min-width: 465px) {
+  /* Header */
+  header {
+
+  }
+
+  /* Navigation */
+  nav {
+
+  }
+}
+
+/*  LAYOUT ABOVE 600 PIXELS */
+@media only screen and (min-width: 600px) {
+  /* Header */
+  header {
+
+  }
+}
+
+/*  LAYOUT ABOVE 769 PIXELS */
+@media only screen and (min-width: 769px) {
+
+  /* Header */
+  header {
+    height: 550px;
+  }
+
+  nav {
+    margin-top: 10px;
+    ul li a #icon_nav {
+      margin: 10px;
+    }
+    ul #logo_icon_nav {
+      margin: 1px 10px 0 5px;
+    }
+  }
+
+  main {
+    #description {
+      h3 {
+        font-size: 50px;
+      }
+    }
+    /* Newsletter Section */
+    #newsletter {
+      width: 600px;
+      input[type=email] {
+        margin: 0;
+      }
+      input[type=submit] {
+        margin: 0;
+        width: 80%;
+      }
+    }
+    #music {
+
+    }
+
+  }
+
+  footer {
+
+    /* Social for mobile */
+    #social {
+      img {
+        margin: 5px 5px 10px 5px;
+        width: 40px;
+      }
+    }
+    /* Booking for mobile */
+    #booking {
+
+    }
+  }
+}
+
+/*  LAYOUT ABOVE 1024 PIXELS */
+@media only screen and (min-width: 1024px) {
+
+  /* Navigation */
+  nav {
+    a h1 {
+      font-size: 6vw;
+    }
+  }
+
+  /* Header */
+  header {
+    height: 600px;
+  }
+
+  main {
+    h1 {
+      font-size: 3vw;
+    }
+    /* Newsletter Section */
+    #newsletter h1 {
+      font-size: 3vw;
+    }
+    /* Music Section */
+    #music {
+
+    }
+    #video {
+      video {
+        padding: 0 200px;
+      }
+    }
+  }
+
+  footer {
+    /* Social media icons */
+    #social {
+      img {
+        padding-top: 10px;
+        margin: 10px 5px 100px 5px;
+        width: 40px;
+        display: inline-block;
+      }
+    }
+
+  }
+}
+
+/*  LAYOUT ABOVE 1200 PIXELS */
+@media only screen and (min-width: 1200px) {
+  /* Header */
+  header {
+    height: 680px;
+  }
+
+  /* Navigation */
+  nav {
+
+  }
+
+  main {
+    #description {
+      h3 {
+        //font-size: 4vw;
+      }
+    }
+
+  }
+
+  footer {
+
+  }
+}
+
+/*  LAYOUT ABOVE 1400 PIXELS */
+@media only screen and (min-width: 1400px) {
+
+  font-size: 4vw;
+  /* Header */
+  header {
+    height: 800px;
+  }
+
+  /* Navigation */
+  nav {
+
+  }
+
+  main {
+    #description {
+      h3 {
+        font-size: 4vw;
+      }
+    }
+    #shows
+    h2 {
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      th {
+        font-size: 4vw;
+        color: #8A001E;
+      }
+      td {
+        padding: 4%;
+        color: #D5D1D9;
+        font-size: 4vw;
+        button {
+          color: #8A001E;
+          background-color: #F5F5F5;
+          border: #72809F 2px solid;
+          font-weight: 700;
+          height: 30px;
+          width: 50px;
+        }
+      }
+    }
+
+  }
+
+  footer {
+
+  }
+}
+
+
 
 
