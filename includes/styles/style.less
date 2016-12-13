@@ -11,10 +11,11 @@
 body {
   font-family: 'Signika Negative', sans-serif;
   background-color: #1B1E23;
+  font-size: 1em;
   a {
     text-decoration: none;
     color: #D5D1D9;
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
   a:hover {
     color: #8A001E;
@@ -82,7 +83,7 @@ main {
     background-color: transparent;
   }
   #description {
-    border-top: double;
+    border-top: double #72809F;
     border-bottom: double #72809F;
     background-color: transparent;
     background-image: url("../images/texture.jpg");
@@ -92,7 +93,7 @@ main {
     height: 80%;
     h3 {
       font-family: Voltaire, sans-serif;
-      font-size: 6.25vw;
+      font-size: 7vw;
       font-weight: 600;
       color: #F5F5F5;
       margin: .5em 0 0 0;
@@ -141,11 +142,11 @@ main {
   #music {
     color: #1B1E23;
     background-color: #1B1E23;
-    border-top: double #72809F;
-    border-bottom: double #72809F;
+    //border-top: double #72809F;
+    //border-bottom: double #72809F;
     text-align: center;
-    margin: 0 auto;
-    padding: 20px 0 10px 0;
+    margin: 0 auto 0 0;
+    padding: 0;
     background-image: url("../images/texture.jpg");
     background-size: cover;
     background-attachment: scroll;
@@ -173,20 +174,19 @@ main {
     }
   }
   #video {
-    padding-top: 20px;
-    //background-color: #000;
+    padding-top: 50px;
+    margin-bottom: 10px;
     h2 {
-      //background-color: #000;
       font-weight: 500;
       margin-bottom: 10px;
     }
     h3 {
-      padding: 10px;
-      font-size: 1.25em;
+      //padding: 10px;
+      //font-size: 1.25em;
     }
     color: #D5D1D9;
     video {
-      margin: 10px 0 25px 0;
+      margin: 10px 0 50px 0;
       width: 100%;
       border-top: double #72809F;
       border-bottom: double #72809F;
@@ -207,8 +207,8 @@ main {
     }
   }
   #shows {
-    padding: 20px 0;
-    border-bottom: double #72809F;
+    color: #72809F;
+    padding: 0;
     h2 {
       font-weight: 500;
       margin-bottom: 10px;
@@ -217,11 +217,10 @@ main {
       width: 100%;
       th {
         padding: 3%;
-        border-top: #8A001E 2px solid;
         border-bottom: #8A001E 2px solid;
-        background-color: #FFF;
+        //background-color: #FFF;
         font-size: 5vw;
-        color: #8A001E;
+        color: #72809F;
       }
       td {
         padding: 4%;
@@ -234,6 +233,7 @@ main {
           font-weight: 700;
           height: 30px;
           width: 50px;
+          cursor: pointer;
          }
        }
     }
@@ -241,7 +241,7 @@ main {
 }
 
 footer {
-  padding: 40px 0;
+  padding: 10px 0 20px 0;
   color: #D5D1D9;
   border-top: double #72809F;
   a {
@@ -321,6 +321,12 @@ footer {
 
 /*  LAYOUT ABOVE 465 PIXELS */
 @media only screen and (min-width: 465px) {
+  /* Global */
+  body {
+    p {
+      font-size: 1.25em;
+    }
+  }
   /* Header */
   header {
 
@@ -330,12 +336,40 @@ footer {
   nav {
 
   }
+
+  /* footer */
+  #footer {
+    font-size: 1.25em;
+    h3 {
+      font-size: 1.5em;
+    }
+    p {
+      font-size: 1.5em;
+    }
+    a {
+      font-size: 1.25em;
+    }
+  }
 }
 
 /*  LAYOUT ABOVE 600 PIXELS */
 @media only screen and (min-width: 600px) {
   /* Header */
   header {
+
+  }
+
+  main {
+    #shows {
+      table {
+        th {
+          font-size: 25px;
+        }
+        td {
+          font-size: 20px;
+        }
+      }
+    }
 
   }
 }
@@ -375,8 +409,32 @@ footer {
         width: 80%;
       }
     }
+    /* Music Section */
     #music {
-
+      #break {
+        display: none;
+      }
+    }
+    #video {
+      #title {
+        font-size: 1.75em;
+      }
+      #venue {
+        font-size: 1.25em;
+      }
+      #date {
+        font-size: 1.25em;
+      }
+    }
+    #shows {
+      table {
+        th {
+          font-size: 30px;
+        }
+        td {
+          font-size: 25px;
+        }
+      }
     }
 
   }
@@ -385,15 +443,16 @@ footer {
 
     /* Social for mobile */
     #social {
-      img {
-        margin: 5px 5px 10px 5px;
-        width: 40px;
+      font-size: 1.25em;
       }
     }
     /* Booking for mobile */
     #booking {
-
+      font-size: 1.25em;
     }
+
+  #copyright {
+    font-size: 1.25em;
   }
 }
 
@@ -420,13 +479,30 @@ footer {
     #newsletter h1 {
       font-size: 3vw;
     }
-    /* Music Section */
-    #music {
 
-    }
     #video {
       video {
         padding: 0 200px;
+      }
+      #title {
+        margin: 40px 0 50px 200px;
+      }
+      #venue {
+        margin: 0 0 25px 220px;
+      }
+      #date {
+        margin: 0 0 0 220px;
+      }
+    }
+    #shows {
+      margin: 0 20%;
+      table {
+        #table_header {
+          width: 100%;
+        }
+        td {
+          margin: 0 4%;
+        }
       }
     }
   }
@@ -465,9 +541,8 @@ footer {
     }
 
   }
-
   footer {
-
+    height: 60vw;
   }
 }
 

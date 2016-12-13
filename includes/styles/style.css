@@ -9,11 +9,12 @@
 body {
   font-family: 'Signika Negative', sans-serif;
   background-color: #1B1E23;
+  font-size: 1em;
 }
 body a {
   text-decoration: none;
   color: #D5D1D9;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 body a:hover {
   color: #8A001E;
@@ -80,7 +81,7 @@ main h2 {
   background-color: transparent;
 }
 main #description {
-  border-top: double;
+  border-top: double #72809F;
   border-bottom: double #72809F;
   background-color: transparent;
   background-image: url("../images/texture.jpg");
@@ -91,7 +92,7 @@ main #description {
 }
 main #description h3 {
   font-family: Voltaire, sans-serif;
-  font-size: 6.25vw;
+  font-size: 7vw;
   font-weight: 600;
   color: #F5F5F5;
   margin: .5em 0 0 0;
@@ -137,11 +138,9 @@ main #newsletter input[type=submit] {
 main #music {
   color: #1B1E23;
   background-color: #1B1E23;
-  border-top: double #72809F;
-  border-bottom: double #72809F;
   text-align: center;
-  margin: 0 auto;
-  padding: 20px 0 10px 0;
+  margin: 0 auto 0 0;
+  padding: 0;
   background-image: url("../images/texture.jpg");
   background-size: cover;
   background-attachment: scroll;
@@ -169,19 +168,16 @@ main #music #song {
   margin: 35px 0;
 }
 main #video {
-  padding-top: 20px;
+  padding-top: 50px;
+  margin-bottom: 10px;
   color: #D5D1D9;
 }
 main #video h2 {
   font-weight: 500;
   margin-bottom: 10px;
 }
-main #video h3 {
-  padding: 10px;
-  font-size: 1.25em;
-}
 main #video video {
-  margin: 10px 0 25px 0;
+  margin: 10px 0 50px 0;
   width: 100%;
   border-top: double #72809F;
   border-bottom: double #72809F;
@@ -201,8 +197,8 @@ main #video #date {
   color: #D5D1D9;
 }
 main #shows {
-  padding: 20px 0;
-  border-bottom: double #72809F;
+  color: #72809F;
+  padding: 0;
 }
 main #shows h2 {
   font-weight: 500;
@@ -213,11 +209,9 @@ main #shows table {
 }
 main #shows table th {
   padding: 3%;
-  border-top: #8A001E 2px solid;
   border-bottom: #8A001E 2px solid;
-  background-color: #FFF;
   font-size: 5vw;
-  color: #8A001E;
+  color: #72809F;
 }
 main #shows table td {
   padding: 4%;
@@ -231,9 +225,10 @@ main #shows table td button {
   font-weight: 700;
   height: 30px;
   width: 50px;
+  cursor: pointer;
 }
 footer {
-  padding: 40px 0;
+  padding: 10px 0 20px 0;
   color: #D5D1D9;
   border-top: double #72809F;
 }
@@ -264,125 +259,183 @@ footer #copyright {
   color: #F5F5F5;
   padding: 20px 0;
 }
-
 /*  LAYOUT BELOW 280 PIXELS */
 @media only screen and (max-width: 280px) {
   /* Global */
   body {
     min-width: 270px;
   }
-
   /* Header */
   /* Navigation */
 }
-
 /*  LAYOUT ABOVE 300 PIXELS */
 @media only screen and (min-width: 300px) {
   /* Header */
   /* Navigation */
 }
-
 /*  LAYOUT ABOVE 380 PIXELS */
 @media only screen and (min-width: 380px) {
   /* Header */
   /* Navigation */
 }
-
 /*  LAYOUT ABOVE 465 PIXELS */
 @media only screen and (min-width: 465px) {
+  /* Global */
+  body p {
+    font-size: 1.25em;
+  }
   /* Header */
   /* Navigation */
-}
+  /* footer */
+  #footer {
+    font-size: 1.25em;
+  }
 
+  #footer h3 {
+    font-size: 1.5em;
+  }
+
+  #footer p {
+    font-size: 1.5em;
+  }
+
+  #footer a {
+    font-size: 1.25em;
+  }
+}
 /*  LAYOUT ABOVE 600 PIXELS */
 @media only screen and (min-width: 600px) {
   /* Header */
-}
+  main #shows table th {
+    font-size: 25px;
+  }
 
+  main #shows table td {
+    font-size: 20px;
+  }
+}
 /*  LAYOUT ABOVE 769 PIXELS */
 @media only screen and (min-width: 769px) {
   /* Header */
   header {
     height: 550px;
   }
-
   nav {
     margin-top: 10px;
   }
-
   nav ul li a #icon_nav {
     margin: 10px;
   }
-
   nav ul #logo_icon_nav {
     margin: 1px 10px 0 5px;
   }
-
   main {
     /* Newsletter Section */
+    /* Music Section */
   }
-
   main #description h3 {
     font-size: 50px;
   }
-
   main #newsletter {
     width: 600px;
   }
-
   main #newsletter input[type=email] {
     margin: 0;
   }
-
   main #newsletter input[type=submit] {
     margin: 0;
     width: 80%;
   }
 
+  main #music #break {
+    display: none;
+  }
+
+  main #video #title {
+    font-size: 1.75em;
+  }
+
+  main #video #venue {
+    font-size: 1.25em;
+  }
+
+  main #video #date {
+    font-size: 1.25em;
+  }
+
+  main #shows table th {
+    font-size: 30px;
+  }
+
+  main #shows table td {
+    font-size: 25px;
+  }
   footer {
     /* Social for mobile */
-    /* Booking for mobile */
   }
 
-  footer #social img {
-    margin: 5px 5px 10px 5px;
-    width: 40px;
+  footer #social {
+    font-size: 1.25em;
+  }
+
+  /* Booking for mobile */
+  #booking {
+    font-size: 1.25em;
+  }
+
+  #copyright {
+    font-size: 1.25em;
   }
 }
-
 /*  LAYOUT ABOVE 1024 PIXELS */
 @media only screen and (min-width: 1024px) {
   /* Navigation */
   nav a h1 {
     font-size: 6vw;
   }
-
   /* Header */
   header {
     height: 600px;
   }
-
   main {
     /* Newsletter Section */
-    /* Music Section */
   }
-
   main h1 {
     font-size: 3vw;
   }
-
   main #newsletter h1 {
     font-size: 3vw;
   }
-
   main #video video {
     padding: 0 200px;
   }
 
+  main #video #title {
+    margin: 40px 0 50px 200px;
+  }
+
+  main #video #venue {
+    margin: 0 0 25px 220px;
+  }
+
+  main #video #date {
+    margin: 0 0 0 220px;
+  }
+
+  main #shows {
+    margin: 0 20%;
+  }
+
+  main #shows table #table_header {
+    width: 100%;
+  }
+
+  main #shows table td {
+    margin: 0 4%;
+  }
   footer {
     /* Social media icons */
   }
-
   footer #social img {
     padding-top: 10px;
     margin: 10px 5px 100px 5px;
@@ -390,17 +443,17 @@ footer #copyright {
     display: inline-block;
   }
 }
-
 /*  LAYOUT ABOVE 1200 PIXELS */
 @media only screen and (min-width: 1200px) {
   /* Header */
   header {
     height: 680px;
   }
-
   /* Navigation */
+  footer {
+    height: 60vw;
+  }
 }
-
 /*  LAYOUT ABOVE 1400 PIXELS */
 @media only screen and (min-width: 1400px) {
   font-size:
@@ -412,32 +465,26 @@ footer #copyright {
   header {
     height: 800px;
   }
-
   /* Navigation */
   main #description h3 {
     font-size: 4vw;
   }
-
   main #shows h2 {
     font-weight: 500;
     margin-bottom: 10px;
   }
-
   main table {
     width: 100%;
   }
-
   main table th {
     font-size: 4vw;
     color: #8A001E;
   }
-
   main table td {
     padding: 4%;
     color: #D5D1D9;
     font-size: 4vw;
   }
-
   main table td button {
     color: #8A001E;
     background-color: #F5F5F5;

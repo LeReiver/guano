@@ -35,9 +35,9 @@
                                     aria-hidden="true" alt="Guano logo navigation image"></a></li>
             <li><a href="#top"><img id="logo_icon_nav" src="includes/images/guano_logo_white_black.png"
                                     aria-hidden="true" alt="Guano logo navigation image"></a></li>
-            <li><a href="#music"><span id="icon_nav" class="fa fa-music" aria-hidden="true"></span></a></li>
-            <li><a href="#video"><span id="icon_nav" class="fa fa-video-camera" aria-hidden="true"></span></a></li>
-            <li><a href="#shows"><span id="icon_nav" class="fa fa-ticket" aria-hidden="true"></span></a></li>
+            <li><a href="#listen"><span id="icon_nav" class="fa fa-music" aria-hidden="true"></span></a></li>
+            <li><a href="#watch"><span id="icon_nav" class="fa fa-video-camera" aria-hidden="true"></span></a></li>
+            <li><a href="#join"><span id="icon_nav" class="fa fa-ticket" aria-hidden="true"></span></a></li>
         </ul>
     </nav>
     <header></header>
@@ -55,12 +55,22 @@
                 </div>
             </form>
         </section>
+        <section id="description">
+            <h3 id="listen">listen</h3>
+        </section>
         <section id="music">
-            <h2>Listen</h2>
+            <div class="section group">
 
-
-            <!-- Requires use of audio container page for showing audio container   -->
-            <?php require_once('audio_player.php'); ?>
+                <div class="col span_6_of_12">
+                    <!-- Requires use of audio container page for showing audio container   -->
+                    <?php require_once('audio_player.php'); ?>
+                </div>
+                <div id="break">&nbsp;</div>
+                <div class="col span_6_of_12">
+                    <!-- Requires use of audio container page for showing audio container   -->
+                    <?php require_once('audio_player_2.php'); ?>
+                </div>
+            </div>
             <!--            <div id="song">-->
             <!--                <h3><span id="title">Reptile</span></h3>-->
             <!--                <audio controls src="includes/audio/reptile.mp3"></audio>-->
@@ -157,8 +167,10 @@
             <!--                        </td>-->
             <!--                </table>-->
         </section>
+        <section id="description">
+            <h3 id="watch">watch</h3>
+        </section>
         <section id="video">
-            <h2>Watch</h2>
             <h3><span id="title">Church Socks and Lotion</span></h3>
             <span id="venue">Live at Hollywood Alley</span> <br><span id="date">- Tempe, AZ October 17, 1998</span>
             <video controls>
@@ -201,8 +213,10 @@
                 <source src="includes/videos/shell_shock.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            <section id="description">
+                <h3 id="join">join us</h3>
+            </section>
         <section id="shows">
-            <h2>Join Us</h2>
             <table>
                 <tr>
                     <th>Date</th>
