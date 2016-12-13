@@ -59,18 +59,18 @@
             <h3 id="listen">listen</h3>
         </section>
         <section id="music">
-            <div class="section group">
-
-                <div class="col span_6_of_12">
+            <!--            <div class="section group">-->
+            <!---->
+            <!--                <div class="col span_6_of_12">-->
                     <!-- Requires use of audio container page for showing audio container   -->
                     <?php require_once('audio_player.php'); ?>
-                </div>
-                <div id="break">&nbsp;</div>
-                <div class="col span_6_of_12">
-                    <!-- Requires use of audio container page for showing audio container   -->
-                    <?php require_once('audio_player_2.php'); ?>
-                </div>
-            </div>
+            <!--                </div>-->
+            <!--                <div id="break">&nbsp;</div>-->
+            <!--                <div class="col span_6_of_12">-->
+            <!--                    <!--Requires use of audio container page for showing audio container-->
+            <!--                    <?php //require_once('audio_player_2.php'); ?>
+<!--                </div>-->
+            <!--            </div>-->
             <!--            <div id="song">-->
             <!--                <h3><span id="title">Reptile</span></h3>-->
             <!--                <audio controls src="includes/audio/reptile.mp3"></audio>-->

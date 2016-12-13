@@ -85,7 +85,7 @@ main #description {
   border-bottom: double #72809F;
   background-color: transparent;
   background-image: url("../images/texture.jpg");
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
   z-index: 1;
   height: 80%;
@@ -143,7 +143,7 @@ main #music {
   padding: 0;
   background-image: url("../images/texture.jpg");
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
 }
 main #music h2 {
   font-weight: 500;
@@ -290,15 +290,12 @@ footer #copyright {
   #footer {
     font-size: 1.25em;
   }
-
   #footer h3 {
     font-size: 1.5em;
   }
-
   #footer p {
     font-size: 1.5em;
   }
-
   #footer a {
     font-size: 1.25em;
   }
@@ -309,7 +306,6 @@ footer #copyright {
   main #shows table th {
     font-size: 25px;
   }
-
   main #shows table td {
     font-size: 20px;
   }
@@ -346,43 +342,34 @@ footer #copyright {
     margin: 0;
     width: 80%;
   }
-
   main #music #break {
     display: none;
   }
-
   main #video #title {
     font-size: 1.75em;
   }
-
   main #video #venue {
     font-size: 1.25em;
   }
-
   main #video #date {
     font-size: 1.25em;
   }
-
   main #shows table th {
     font-size: 30px;
   }
-
   main #shows table td {
     font-size: 25px;
   }
   footer {
     /* Social for mobile */
   }
-
   footer #social {
     font-size: 1.25em;
   }
-
   /* Booking for mobile */
   #booking {
     font-size: 1.25em;
   }
-
   #copyright {
     font-size: 1.25em;
   }
@@ -409,27 +396,21 @@ footer #copyright {
   main #video video {
     padding: 0 200px;
   }
-
   main #video #title {
     margin: 40px 0 50px 200px;
   }
-
   main #video #venue {
     margin: 0 0 25px 220px;
   }
-
   main #video #date {
     margin: 0 0 0 220px;
   }
-
   main #shows {
     margin: 0 20%;
   }
-
   main #shows table #table_header {
     width: 100%;
   }
-
   main #shows table td {
     margin: 0 4%;
   }
