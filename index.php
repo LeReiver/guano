@@ -78,7 +78,7 @@
         <section id="newsletter" class="section group">
             <form action="index.php" method="post">
                 <div class="col span_9_of_12">
-                    <input type="email" name="email" autofocus placeholder="Enter email to join newsletter">
+                    <input type="email" name="email" placeholder="Enter email to join newsletter">
                 </div>
                 <div class="col span_3_of_12">
                     <input id="submit" name="submit" type="submit" value="Submit">

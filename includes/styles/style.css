@@ -55,7 +55,7 @@ nav ul #logo_icon_nav {
 }
 header {
   background-color: #000;
-  background-image: url("../images/guano_logo_lg.png");
+  background-image: url("../images/guano_hero2.png");
   margin: 0;
   padding: 0;
   height: 90vw;
@@ -80,7 +80,6 @@ main h2 {
   text-transform: uppercase;
   background-color: transparent;
 }
-
 main .description {
   border-top: double #72809F;
   border-bottom: double #72809F;
@@ -91,7 +90,6 @@ main .description {
   z-index: 1;
   height: 80%;
 }
-
 main .description h3 {
   font-family: Voltaire, sans-serif;
   font-size: 6.5vw;
@@ -103,7 +101,6 @@ main .description h3 {
   text-transform: uppercase;
   z-index: 3;
 }
-
 main .description p {
   color: #D5D1D9;
   text-align: start;
@@ -161,7 +158,6 @@ main #music h3 {
 main #music audio {
   width: 90%;
 }
-
 main #music .title {
   font-weight: 300;
   margin: 40px 0 0 10px;
@@ -187,19 +183,16 @@ main #video video {
   border-top: double #72809F;
   border-bottom: double #72809F;
 }
-
 main #video .title {
   font-weight: 300;
   margin: 40px 0 50px 10px;
   width: 100%;
   font-size: 1.25em;
 }
-
 main #video .venue {
   margin: 0 0 25px 30px;
   color: #D5D1D9;
 }
-
 main #video .date {
   margin: 0 0 0 30px;
   color: #D5D1D9;
@@ -280,7 +273,6 @@ footer #copyright {
   body p {
     font-size: 1.25em;
   }
-
   main .description p {
     width: 450px;
   }
@@ -314,7 +306,6 @@ footer #copyright {
   header {
     height: 550px;
   }
-
   /* Nav Section*/
   nav {
     margin-top: 10px;
@@ -325,18 +316,15 @@ footer #copyright {
   nav ul #logo_icon_nav {
     margin: 1px 10px 0 5px;
   }
-
   /* Main Section*/
   main {
     /*Description */
     /* Newsletter Section */
     /* Music Section */
   }
-
   main .description h3 {
     font-size: 50px;
   }
-
   main .description p {
     width: 560px;
     font-size: 20px;
@@ -354,15 +342,12 @@ footer #copyright {
   main #music #break {
     display: none;
   }
-
   main #video .title {
     font-size: 1.75em;
   }
-
   main #video .venue {
     font-size: 1.25em;
   }
-
   main #video .date {
     font-size: 1.25em;
   }
@@ -372,7 +357,6 @@ footer #copyright {
   main #shows table td {
     font-size: 25px;
   }
-
   /* Footer Section */
   footer {
     /* Social for mobile */
@@ -381,11 +365,9 @@ footer #copyright {
   footer #social {
     font-size: 1.25em;
   }
-
   footer #booking {
     font-size: 1.25em;
   }
-
   footer #copyright {
     font-size: 1.25em;
   }
@@ -407,7 +389,6 @@ footer #copyright {
   main h1 {
     font-size: 3vw;
   }
-
   main .description p {
     font-size: 20px;
   }
@@ -417,15 +398,12 @@ footer #copyright {
   main #video video {
     padding: 0 200px;
   }
-
   main #video .title {
     margin: 40px 0 50px 200px;
   }
-
   main #video .venue {
     margin: 0 0 25px 220px;
   }
-
   main #video .date {
     margin: 0 0 0 220px;
   }
@@ -473,22 +451,18 @@ footer #copyright {
     font-weight: 500;
     margin-bottom: 10px;
   }
-
   main #shows table {
     width: 100%;
   }
-
   main #shows table th {
     font-size: 4vw;
     color: #8A001E;
   }
-
   main #shows table td {
     padding: 4%;
     color: #D5D1D9;
     font-size: 4vw;
   }
-
   main #shows table td button {
     color: #8A001E;
     background-color: #F5F5F5;
