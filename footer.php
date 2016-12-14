@@ -10,10 +10,12 @@
 require_once('includes/scripts/image_slider.php');
 ?>
 <footer>
+    <!-- Booking Section-->
     <section id="booking">
             <h3>Contact us for booking:</h3>
             <p><a href="mailto:booking@guano.com">booking@guano.com</a> &nbsp;| +1-666-000-0000</p>
     </section>
+    <!-- Social Section-->
     <section id="social">
         <a href="http://soundcloud.com/" target="_blank"><span id="footer_nav" class="fa fa-soundcloud"
                                                                aria-hidden="true"></span></a>
@@ -22,12 +24,14 @@ require_once('includes/scripts/image_slider.php');
         <a href="http://instagram.com/" target="_blank"><span id="footer_nav" class="fa fa-instagram"
                                                               aria-hidden="true"></span></a>
     </section>
+    <!-- Footer Image - Rapid slide show to produce flickering effect-->
     <section id="footer_img" class=" w3-content">
         <img class="img_slider w3-animate wait" style="width:100%" src="includes/images/flyer_wht_2.png"
              alt="Guano footer image">
         <img class="img_slider w3-animate wait" style="width:100%" src="includes/images/flyer_wht_1.png"
              alt="Guano footer image">
     </section>
+    <!-- Copyright Section -->
     <section id="copyright">
         &copy; 2016 Guano | Designed by <a href="http://lereiver.com" target="_blank">LeReiver</a>
     </section>

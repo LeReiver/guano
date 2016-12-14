@@ -1,12 +1,14 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: mike
- * Date: 12/6/16
- * Time: 4:06 PM
+ * Programmer: Michael Le-Reiver
+ * Date: 12/12/16
+ * Time: 10:36 AM
+ * File: audio_container.php
+ * Description: Script for audioControls
+ * Developed by: Arun Kumar Sekar  Modified by Michael Le-Reiver
+ * www.9lessons.info
  */
 ?>
-
 <script>
     $(document).ready(function()
     {
@@ -16,7 +18,7 @@
                 timer: 'decrement',
                 shuffled: false,
                 onAudioChange : function(response){
-                    $('.songPlay').text(response.title + ' ...'); //Song title information
+                    $('.songPlay').text(response.title + ''); //Song title information
                 },
                 onVolumeChange : function(vol){
                     var obj = $('.volume');

@@ -1,12 +1,12 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: mike
+ * Programmer: Michael Le-Reiver
  * Date: 11/30/16
- * Time: 2:46 PM
+ * Time: 2:45 PM
+ * File: responsive_nav.css.php
+ * Responsive Navigation
  */
  header('Content-type: text/css');
- 
  ?>
 
 /* -------------------- Hamburger Menu Bars ----------------------- */
@@ -118,7 +118,7 @@ ul.topnav li.icon {
     ul.topnav.responsive {
         position: relative;
         padding: 0;
-        background-color: #1B1E23;
+        background-color: #000;
         height: 110%;
         transition: 1.5s;
     }

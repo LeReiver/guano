@@ -10,7 +10,7 @@
 
 body {
   font-family: 'Signika Negative', sans-serif;
-  background-color: #1B1E23;
+  background-color: #000;
   font-size: 1em;
   a {
     text-decoration: none;
@@ -21,6 +21,7 @@ body {
     color: #8A001E;
   }
 }
+
 nav {
   margin: 0;
   overflow: hidden;
@@ -29,7 +30,7 @@ nav {
   right: .25em;
   z-index: 1000;
   border-radius: 70px;
-  ul li a #icon_nav   {
+  ul li a #icon_nav {
     list-style: none;
     text-decoration: none;
     display: inline;
@@ -39,7 +40,7 @@ nav {
     margin: 5px 5px;
     padding: 5px 5px;
   }
-  ul #logo_nav   {
+  ul #logo_nav {
     list-style: none;
     text-decoration: none;
     width: 42px;
@@ -55,8 +56,9 @@ nav {
     margin: 5px 0 0 5px;
   }
 }
+
 header {
-  background-color: #1B1E23;
+  background-color: #000;
   background-image: url("../images/guano_logo_lg.png");
   margin: 0;
   padding: 0;
@@ -82,7 +84,7 @@ main {
     text-transform: uppercase;
     background-color: transparent;
   }
-  #description {
+  .description {
     border-top: double #72809F;
     border-bottom: double #72809F;
     background-color: transparent;
@@ -93,7 +95,7 @@ main {
     height: 80%;
     h3 {
       font-family: Voltaire, sans-serif;
-      font-size: 7vw;
+      font-size: 6.5vw;
       font-weight: 600;
       color: #F5F5F5;
       margin: .5em 0 0 0;
@@ -103,9 +105,12 @@ main {
       z-index: 3;
     }
     p {
-      color: #F5F5F5;
-      text-align: center;
-      font-size: 5vw;
+      color: #D5D1D9;
+      text-align: start;
+      font-size: 2.85vw;
+      font-weight: 700;
+      width: 275px;
+      margin: 0 auto 10px auto;
     }
   }
   #newsletter {
@@ -122,7 +127,6 @@ main {
       text-align: center;
       color: rgba(0, 0, 0, 0.95);
       font-weight: 700;
-
     }
     input[type=submit] {
       width: 40%;
@@ -140,14 +144,10 @@ main {
   }
 
   #music {
-    color: #1B1E23;
-    background-color: #1B1E23;
-    //border-top: double #72809F;
-    //border-bottom: double #72809F;
+    color: #000;
     text-align: center;
     margin: 0 auto 0 0;
     padding: 0;
-    background-image: url("../images/texture.jpg");
     background-size: cover;
     background-attachment: fixed;
     h2 {
@@ -156,13 +156,13 @@ main {
     h3 {
       text-align: start;
       margin: 0 0 5px 20px;
-      color: #1B1E23;
+      color: #000;
       background-color: transparent;
     }
     audio {
       width: 90%;
     }
-    #title {
+    .title {
       font-weight: 300;
       margin: 40px 0 0 10px;
       width: 100%;
@@ -180,10 +180,6 @@ main {
       font-weight: 500;
       margin-bottom: 10px;
     }
-    h3 {
-      //padding: 10px;
-      //font-size: 1.25em;
-    }
     color: #D5D1D9;
     video {
       margin: 10px 0 50px 0;
@@ -191,17 +187,17 @@ main {
       border-top: double #72809F;
       border-bottom: double #72809F;
     }
-    #title {
+    .title {
       font-weight: 300;
       margin: 40px 0 50px 10px;
       width: 100%;
       font-size: 1.25em;
     }
-    #venue {
+    .venue {
       margin: 0 0 25px 30px;
       color: #D5D1D9;
     }
-    #date {
+    .date {
       margin: 0 0 0 30px;
       color: #D5D1D9;
     }
@@ -218,7 +214,6 @@ main {
       th {
         padding: 3%;
         border-bottom: #8A001E 2px solid;
-        //background-color: #FFF;
         font-size: 5vw;
         color: #72809F;
       }
@@ -234,8 +229,8 @@ main {
           height: 30px;
           width: 50px;
           cursor: pointer;
-         }
-       }
+        }
+      }
     }
   }
 }
@@ -281,42 +276,6 @@ footer {
   body {
     min-width: 270px;
   }
-
-  /* Header */
-  header {
-
-  }
-
-  /* Navigation */
-  nav {
-
-  }
-}
-
-/*  LAYOUT ABOVE 300 PIXELS */
-@media only screen and (min-width: 300px) {
-  /* Header */
-  header {
-
-  }
-
-  /* Navigation */
-  nav {
-
-  }
-}
-
-/*  LAYOUT ABOVE 380 PIXELS */
-@media only screen and (min-width: 380px) {
-  /* Header */
-  header {
-
-  }
-
-  /* Navigation */
-  nav {
-
-  }
 }
 
 /*  LAYOUT ABOVE 465 PIXELS */
@@ -327,14 +286,13 @@ footer {
       font-size: 1.25em;
     }
   }
-  /* Header */
-  header {
 
-  }
-
-  /* Navigation */
-  nav {
-
+  main {
+    .description {
+      p {
+        width: 450px;
+      }
+    }
   }
 
   /* footer */
@@ -354,11 +312,7 @@ footer {
 
 /*  LAYOUT ABOVE 600 PIXELS */
 @media only screen and (min-width: 600px) {
-  /* Header */
-  header {
-
-  }
-
+  /* Main */
   main {
     #shows {
       table {
@@ -377,11 +331,12 @@ footer {
 /*  LAYOUT ABOVE 769 PIXELS */
 @media only screen and (min-width: 769px) {
 
-  /* Header */
+  /* Header Section*/
   header {
     height: 550px;
   }
 
+  /* Nav Section*/
   nav {
     margin-top: 10px;
     ul li a #icon_nav {
@@ -392,15 +347,22 @@ footer {
     }
   }
 
+  /* Main Section*/
   main {
-    #description {
+
+    /*Description */
+    .description {
       h3 {
         font-size: 50px;
+      }
+      p {
+        width: 560px;
+        font-size: 20px;
       }
     }
     /* Newsletter Section */
     #newsletter {
-      width: 600px;
+      width: 650px;
       input[type=email] {
         margin: 0;
       }
@@ -416,13 +378,13 @@ footer {
       }
     }
     #video {
-      #title {
+      .title {
         font-size: 1.75em;
       }
-      #venue {
+      .venue {
         font-size: 1.25em;
       }
-      #date {
+      .date {
         font-size: 1.25em;
       }
     }
@@ -436,23 +398,22 @@ footer {
         }
       }
     }
-
   }
 
+  /* Footer Section */
   footer {
-
     /* Social for mobile */
     #social {
       font-size: 1.25em;
-      }
     }
     /* Booking for mobile */
     #booking {
       font-size: 1.25em;
     }
 
-  #copyright {
-    font-size: 1.25em;
+    #copyright {
+      font-size: 1.25em;
+    }
   }
 }
 
@@ -475,6 +436,12 @@ footer {
     h1 {
       font-size: 3vw;
     }
+    /*Description */
+    .description {
+      p {
+        font-size: 20px;
+      }
+    }
     /* Newsletter Section */
     #newsletter h1 {
       font-size: 3vw;
@@ -484,13 +451,13 @@ footer {
       video {
         padding: 0 200px;
       }
-      #title {
+      .title {
         margin: 40px 0 50px 200px;
       }
-      #venue {
+      .venue {
         margin: 0 0 25px 220px;
       }
-      #date {
+      .date {
         margin: 0 0 0 220px;
       }
     }
@@ -528,19 +495,6 @@ footer {
     height: 680px;
   }
 
-  /* Navigation */
-  nav {
-
-  }
-
-  main {
-    #description {
-      h3 {
-        //font-size: 4vw;
-      }
-    }
-
-  }
   footer {
     height: 60vw;
   }
@@ -548,57 +502,40 @@ footer {
 
 /*  LAYOUT ABOVE 1400 PIXELS */
 @media only screen and (min-width: 1400px) {
-
   font-size: 4vw;
   /* Header */
   header {
     height: 800px;
   }
 
-  /* Navigation */
-  nav {
-
-  }
-
   main {
-    #description {
-      h3 {
-        font-size: 4vw;
+    #shows {
+      h2 {
+        font-weight: 500;
+        margin-bottom: 10px;
       }
-    }
-    #shows
-    h2 {
-      font-weight: 500;
-      margin-bottom: 10px;
-    }
-    table {
-      width: 100%;
-      th {
-        font-size: 4vw;
-        color: #8A001E;
-      }
-      td {
-        padding: 4%;
-        color: #D5D1D9;
-        font-size: 4vw;
-        button {
+      table {
+        width: 100%;
+        th {
+          font-size: 4vw;
           color: #8A001E;
-          background-color: #F5F5F5;
-          border: #72809F 2px solid;
-          font-weight: 700;
-          height: 30px;
-          width: 50px;
+        }
+        td {
+          padding: 4%;
+          color: #D5D1D9;
+          font-size: 4vw;
+          button {
+            color: #8A001E;
+            background-color: #F5F5F5;
+            border: #72809F 2px solid;
+            font-weight: 700;
+            height: 30px;
+            width: 50px;
+          }
         }
       }
     }
-
-  }
-
-  footer {
-
   }
 }
-
-
 
 

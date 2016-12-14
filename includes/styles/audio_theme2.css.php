@@ -1,29 +1,16 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: mike
+ * Programmer: Michael Le-Reiver
  * Date: 12/12/16
  * Time: 10:36 AM
+ * File: audio_theme2.css.php
+ * Description: CSS for audioControls
+ * Developed by:Arun Kumar Sekar  Modified by Michael Le-Reiver
+ * www.9lessons.info
  */
-
- header('Content-Type:text/css');
- ?>
-
-* {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    background-color: #1B1E23;
-    font-family: SourceSansPro-Regular, Helvetica, Arial, 'sans-serif';
-    font-size: 14px;
-    line-height: 1.428571429;
-}
-
-ul, li {
-    list-style: none;
-}
+ 
+header('Content-Type:text/css');
+?>
 
 .mainContainer {
     margin: 0 auto;
@@ -34,7 +21,11 @@ ul, li {
     float: left;
     margin: 0 auto;
     width: 100%;
-    background-color: #1B1E23;
+    background-image: url("../images/stage1.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
     border-top: double #72809F;
     border-bottom: double #72809F;
 }
@@ -75,7 +66,7 @@ ul, li {
 #listContainer {
     width: 310px;
     background-color: transparent;
-    margin: 0 auto;
+    margin: 54vw auto 0 auto;
 }
 
 #listContainer ul {
@@ -114,7 +105,6 @@ ul, li {
 #playerContainer {
     margin: 0 auto 10px 0;
     height: 130px;
-    background-color: #1B1E23;
     text-align: center;
 }
 .controls {
@@ -312,19 +302,22 @@ input[type="range"] {
     transition: width 0.6s ease;
 }
 
-@media only screen and (min-width: 518px) {
-
+@media only screen and (min-width: 465px) {
     .containerPlayer h2 {
         font-size: 35px;
     }
+
+    #listContainer {
+        margin-top: 42vw;
+    }
 }
+
 @media only screen and (min-width: 769px) {
-/*    */
-/*    .mainContainer {*/
-/*        width: 50vw;*/
-/*    }*/
+    input[type="range"] {
+        margin-left: -220px;
+    }
     #playerContainer {
-        width: 30vw;
+        width: 50vw;
         margin: 0 auto;
     }
     .containerPlayer h2 {
@@ -338,9 +331,6 @@ input[type="range"] {
     .seekableTrack {
         width: 50%;
         margin 0 auto;
-    }
-    input[type="range"] {
-        margin-left: -220px;
     }
     .volume {
         margin-left: 20px;

@@ -1,9 +1,10 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: mike
+ * Programmer: Michael Le-Reiver
  * Date: 11/30/16
  * Time: 1:50 PM
+ * File: responsive_nav.php
+ * Description: JS script for handling responsive navigation
  */
 ?>
 <script>

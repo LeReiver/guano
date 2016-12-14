@@ -1,14 +1,14 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: mike
- * Date: 12/1/16
- * Time: 4:32 PM
+ * Programmer: Michael Le-Reiver
+ * Date: 12/16/16
+ * Time: 4:08 PM
+ * File: image_slider.php
+ * Description: Image Slider for footer image flicker effect
  */
-
 ?>
 <script>
-    // carousel slider function for footer image
+    // carousel slider function for footer image,- high speed for flicker effect
     var myIndex = 0;
     carousel();
 

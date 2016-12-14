@@ -8,7 +8,7 @@
 /* Global Styles */
 body {
   font-family: 'Signika Negative', sans-serif;
-  background-color: #1B1E23;
+  background-color: #000;
   font-size: 1em;
 }
 body a {
@@ -54,7 +54,7 @@ nav ul #logo_icon_nav {
   margin: 5px 0 0 5px;
 }
 header {
-  background-color: #1B1E23;
+  background-color: #000;
   background-image: url("../images/guano_logo_lg.png");
   margin: 0;
   padding: 0;
@@ -80,7 +80,8 @@ main h2 {
   text-transform: uppercase;
   background-color: transparent;
 }
-main #description {
+
+main .description {
   border-top: double #72809F;
   border-bottom: double #72809F;
   background-color: transparent;
@@ -90,9 +91,10 @@ main #description {
   z-index: 1;
   height: 80%;
 }
-main #description h3 {
+
+main .description h3 {
   font-family: Voltaire, sans-serif;
-  font-size: 7vw;
+  font-size: 6.5vw;
   font-weight: 600;
   color: #F5F5F5;
   margin: .5em 0 0 0;
@@ -101,10 +103,14 @@ main #description h3 {
   text-transform: uppercase;
   z-index: 3;
 }
-main #description p {
-  color: #F5F5F5;
-  text-align: center;
-  font-size: 5vw;
+
+main .description p {
+  color: #D5D1D9;
+  text-align: start;
+  font-size: 2.85vw;
+  font-weight: 700;
+  width: 275px;
+  margin: 0 auto 10px auto;
 }
 main #newsletter {
   width: 92%;
@@ -136,12 +142,10 @@ main #newsletter input[type=submit] {
   cursor: pointer;
 }
 main #music {
-  color: #1B1E23;
-  background-color: #1B1E23;
+  color: #000;
   text-align: center;
   margin: 0 auto 0 0;
   padding: 0;
-  background-image: url("../images/texture.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -151,13 +155,14 @@ main #music h2 {
 main #music h3 {
   text-align: start;
   margin: 0 0 5px 20px;
-  color: #1B1E23;
+  color: #000;
   background-color: transparent;
 }
 main #music audio {
   width: 90%;
 }
-main #music #title {
+
+main #music .title {
   font-weight: 300;
   margin: 40px 0 0 10px;
   width: 100%;
@@ -182,17 +187,20 @@ main #video video {
   border-top: double #72809F;
   border-bottom: double #72809F;
 }
-main #video #title {
+
+main #video .title {
   font-weight: 300;
   margin: 40px 0 50px 10px;
   width: 100%;
   font-size: 1.25em;
 }
-main #video #venue {
+
+main #video .venue {
   margin: 0 0 25px 30px;
   color: #D5D1D9;
 }
-main #video #date {
+
+main #video .date {
   margin: 0 0 0 30px;
   color: #D5D1D9;
 }
@@ -265,18 +273,6 @@ footer #copyright {
   body {
     min-width: 270px;
   }
-  /* Header */
-  /* Navigation */
-}
-/*  LAYOUT ABOVE 300 PIXELS */
-@media only screen and (min-width: 300px) {
-  /* Header */
-  /* Navigation */
-}
-/*  LAYOUT ABOVE 380 PIXELS */
-@media only screen and (min-width: 380px) {
-  /* Header */
-  /* Navigation */
 }
 /*  LAYOUT ABOVE 465 PIXELS */
 @media only screen and (min-width: 465px) {
@@ -284,8 +280,10 @@ footer #copyright {
   body p {
     font-size: 1.25em;
   }
-  /* Header */
-  /* Navigation */
+
+  main .description p {
+    width: 450px;
+  }
   /* footer */
   #footer {
     font-size: 1.25em;
@@ -302,7 +300,7 @@ footer #copyright {
 }
 /*  LAYOUT ABOVE 600 PIXELS */
 @media only screen and (min-width: 600px) {
-  /* Header */
+  /* Main */
   main #shows table th {
     font-size: 25px;
   }
@@ -312,10 +310,12 @@ footer #copyright {
 }
 /*  LAYOUT ABOVE 769 PIXELS */
 @media only screen and (min-width: 769px) {
-  /* Header */
+  /* Header Section*/
   header {
     height: 550px;
   }
+
+  /* Nav Section*/
   nav {
     margin-top: 10px;
   }
@@ -325,15 +325,24 @@ footer #copyright {
   nav ul #logo_icon_nav {
     margin: 1px 10px 0 5px;
   }
+
+  /* Main Section*/
   main {
+    /*Description */
     /* Newsletter Section */
     /* Music Section */
   }
-  main #description h3 {
+
+  main .description h3 {
     font-size: 50px;
   }
+
+  main .description p {
+    width: 560px;
+    font-size: 20px;
+  }
   main #newsletter {
-    width: 600px;
+    width: 650px;
   }
   main #newsletter input[type=email] {
     margin: 0;
@@ -345,13 +354,16 @@ footer #copyright {
   main #music #break {
     display: none;
   }
-  main #video #title {
+
+  main #video .title {
     font-size: 1.75em;
   }
-  main #video #venue {
+
+  main #video .venue {
     font-size: 1.25em;
   }
-  main #video #date {
+
+  main #video .date {
     font-size: 1.25em;
   }
   main #shows table th {
@@ -360,17 +372,21 @@ footer #copyright {
   main #shows table td {
     font-size: 25px;
   }
+
+  /* Footer Section */
   footer {
     /* Social for mobile */
+    /* Booking for mobile */
   }
   footer #social {
     font-size: 1.25em;
   }
-  /* Booking for mobile */
-  #booking {
+
+  footer #booking {
     font-size: 1.25em;
   }
-  #copyright {
+
+  footer #copyright {
     font-size: 1.25em;
   }
 }
@@ -385,10 +401,15 @@ footer #copyright {
     height: 600px;
   }
   main {
+    /*Description */
     /* Newsletter Section */
   }
   main h1 {
     font-size: 3vw;
+  }
+
+  main .description p {
+    font-size: 20px;
   }
   main #newsletter h1 {
     font-size: 3vw;
@@ -396,13 +417,16 @@ footer #copyright {
   main #video video {
     padding: 0 200px;
   }
-  main #video #title {
+
+  main #video .title {
     margin: 40px 0 50px 200px;
   }
-  main #video #venue {
+
+  main #video .venue {
     margin: 0 0 25px 220px;
   }
-  main #video #date {
+
+  main #video .date {
     margin: 0 0 0 220px;
   }
   main #shows {
@@ -430,7 +454,6 @@ footer #copyright {
   header {
     height: 680px;
   }
-  /* Navigation */
   footer {
     height: 60vw;
   }
@@ -446,27 +469,27 @@ footer #copyright {
   header {
     height: 800px;
   }
-  /* Navigation */
-  main #description h3 {
-    font-size: 4vw;
-  }
   main #shows h2 {
     font-weight: 500;
     margin-bottom: 10px;
   }
-  main table {
+
+  main #shows table {
     width: 100%;
   }
-  main table th {
+
+  main #shows table th {
     font-size: 4vw;
     color: #8A001E;
   }
-  main table td {
+
+  main #shows table td {
     padding: 4%;
     color: #D5D1D9;
     font-size: 4vw;
   }
-  main table td button {
+
+  main #shows table td button {
     color: #8A001E;
     background-color: #F5F5F5;
     border: #72809F 2px solid;
