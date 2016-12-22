@@ -103,7 +103,7 @@ main .description h3 {
 }
 main .description p {
   color: #D5D1D9;
-  text-align: start;
+  text-align: center;
   font-size: 2.85vw;
   font-weight: 700;
   width: 275px;
@@ -455,13 +455,13 @@ footer #copyright {
     width: 100%;
   }
   main #shows table th {
-    font-size: 4vw;
+    font-size: 30px;
     color: #8A001E;
   }
   main #shows table td {
     padding: 4%;
     color: #D5D1D9;
-    font-size: 4vw;
+    font-size: 25px;
   }
   main #shows table td button {
     color: #8A001E;

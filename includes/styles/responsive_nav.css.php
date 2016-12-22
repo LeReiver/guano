@@ -43,20 +43,22 @@
 }
 
 .change .bar1 {
-    -webkit-transform: rotate(90deg) translate(12px, -6px);
-    transform: rotate(90deg) translate(12px, -6px);
+    -webkit-transform: rotate(45deg) translate(14px, 6px);
+    transform: rotate(45deg) translate(14px, 6px);
     width: 40px;
 }
 
 .change .bar2 {
-    -webkit-transform: rotate(450deg) translate(8px, -11px);
-    transform: rotate(450deg) translate(8px, -11px);
+    -webkit-transform: rotate(450deg) translate(10px, 6px);
+    transform: rotate(450deg) translate(10px, 6px);
+    width: 30px;
+    opacity: 0;
 }
 
 .change .bar3 {
-    -webkit-transform: rotate(0deg) translate(11px, 0px);
-    transform: rotate(0deg) translate(11px, 0px);
-    width: 30px;
+    -webkit-transform: rotate(135deg) translate(-7px, 1px);
+    transform: rotate(135deg) translate(-7px, 1px);
+    width: 40px;
 }
 
 /* -------------------Collapsing Responsive Navigation -----------------------  */
