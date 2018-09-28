@@ -55,7 +55,7 @@ nav ul #logo_icon_nav {
 }
 header {
   background-color: #000;
-  background-image: url("../images/guano_hero2.png");
+  background-image: url("../images/guano_hero2.jpg");
   margin: 0;
   padding: 0;
   height: 90vw;
@@ -103,7 +103,7 @@ main .description h3 {
 }
 main .description p {
   color: #D5D1D9;
-  text-align: start;
+  text-align: center;
   font-size: 2.85vw;
   font-weight: 700;
   width: 275px;
@@ -179,7 +179,7 @@ main #video h2 {
 }
 main #video video {
   margin: 10px 0 50px 0;
-  width: 100%;
+  width: 99%;
   border-top: double #72809F;
   border-bottom: double #72809F;
 }
@@ -438,11 +438,7 @@ footer #copyright {
 }
 /*  LAYOUT ABOVE 1400 PIXELS */
 @media only screen and (min-width: 1400px) {
-  font-size:
-
-4vw
-
-;
+  font-size: 4vw;
   /* Header */
   header {
     height: 800px;

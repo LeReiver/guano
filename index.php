@@ -28,6 +28,15 @@
 -->
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112437058-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112437058-1');
+    </script>
     <title>Guano</title>
     <!-- Metadata Tags -->
     <meta name="description"
@@ -151,50 +160,50 @@
                 <h3 id="join">join us</h3>
             </section>
             <!-- Shows Section -->
-        <section id="shows">
-            <table>
-                <tr>
-                    <th>Date</th>
-                    <th>Venue</th>
-                    <th>Location</th>
-                    <th>Tickets</th>
-                </tr>
-                <tr>
-                    <td>12/22<br>2016</td>
-                    <td>The Nile</td>
-                    <td>Phoenix, AZ</td>
-                    <td><button>BUY</button></td>
-                </tr>
-                <tr>
-                    <td>12/28<br>2016</td>
-                    <td>Los Gatos Locos</td>
-                    <td>Albuquerque, NM</td>
-                    <td><button>BUY</button></td>
-                </tr>
-                <tr>
-                    <td>01/10<br>2017</td>
-                    <td>The NightHawk</td>
-                    <td>San Diego</td>
-                    <td><button>BUY</button></td>
-                </tr>
-                <tr>
-                    <td>01/20<br>2017</td>
-                    <td>Jake's Hut</td>
-                    <td>Boulder, CO</td>
-                    <td>
-                        <button>BUY</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>01/28<br>2017</td>
-                    <td>Nutz</td>
-                    <td>Nashville, TN</td>
-                    <td>
-                        <button>BUY</button>
-                    </td>
-                </tr>
-            </table>
-        </section>
+            <section id="shows">
+                <table>
+                    <tr>
+                        <th>Date</th>
+                        <th>Venue</th>
+                        <th>Location</th>
+                        <th>Tickets</th>
+                    </tr>
+                    <tr>
+                        <td>12/22<br><?php echo date('Y'); ?></td>
+                        <td>The Nile</td>
+                        <td>Phoenix, AZ</td>
+                        <td><button>BUY</button></td>
+                    </tr>
+                    <tr>
+                        <td>12/28<br> <? echo date('Y'); ?></td>
+                        <td>Los Gatos Locos</td>
+                        <td>Albuquerque, NM</td>
+                        <td><button>BUY</button></td>
+                    </tr>
+                    <tr>
+                        <td>01/10<br> <? echo (date('Y') + 1); ?></td>
+                        <td>The NightHawk</td>
+                        <td>San Diego</td>
+                        <td><button>BUY</button></td>
+                    </tr>
+                    <tr>
+                        <td>01/20<br><? echo (date('Y') + 1); ?></td>
+                        <td>Jake's Hut</td>
+                        <td>Boulder, CO</td>
+                        <td>
+                            <button>BUY</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>01/28<br><? echo (date('Y') + 1); ?></td>
+                        <td>Nutz</td>
+                        <td>Nashville, TN</td>
+                        <td>
+                            <button>BUY</button>
+                        </td>
+                    </tr>
+                </table>
+            </section>
     </main>
     <!-- Footer Section-->
     <!-- Requires use of footer file  -->
