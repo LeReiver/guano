@@ -1,2 +1,3 @@
-# php_web_template
 # guano
+
+### A mobile-first website for a band that no loger exists.
